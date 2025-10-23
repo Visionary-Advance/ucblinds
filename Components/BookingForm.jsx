@@ -113,7 +113,7 @@ export default function BookingForm() {
   };
 
   return (
-    <div className="w-full max-w-[500px] flex-shrink-0 bg-neutral-100 rounded-[20px] overflow-hidden">
+    <div className="w-full lg:min-w-[500px] shadow-2xl max-w-[500px] flex-shrink-0 bg-neutral-100 rounded-[20px] overflow-hidden">
       {/* Form Header */}
       <div className="bg-[#5d5d5d] h-[90px] px-5 pt-6">
         {/* Step Indicators */}
@@ -169,7 +169,7 @@ export default function BookingForm() {
       </div>
 
       {/* Form Content */}
-      <div className="p-12 pt-8">
+      <div className="px-4 pb-5 lg:px-8 pt-5">
         {/* Success Message */}
         {isSubmitted ? (
           <div className="animate-fadeIn flex flex-col items-center justify-center py-16">
@@ -194,19 +194,19 @@ export default function BookingForm() {
             {currentStep === 1 && (
               <div className="animate-fadeIn">
                 {/* Form Title */}
-                <div className="mb-8">
+                <div className="mb-8 flex flex-col items-center">
                   <div className="flex items-center gap-2 mb-2">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2">
                       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                       <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <h3 className="font-montserrat font-bold text-black text-[20px]">Contact Information</h3>
+                    <h3 className="font-montserrat font-bold text-black text-[22px]">Contact Information</h3>
                   </div>
-                  <p className="font-montserrat text-black text-[14px]">Let&apos;s start with your basic information</p>
+                  <p className="font-montserrat text-black text-[1rem] text-center">Let&apos;s start with your basic information</p>
                 </div>
 
                 {/* Form Fields */}
-                <div className="space-y-6">
+                <div className="space-y-2">
                   {/* First Name and Last Name */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* First Name */}
@@ -335,7 +335,7 @@ export default function BookingForm() {
             {currentStep === 2 && (
               <div className="animate-fadeIn">
                 {/* Form Title */}
-                <div className="mb-8">
+                <div className="mb-8 flex flex-col items-center">
                   <div className="flex items-center gap-2 mb-2">
                     <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
@@ -343,7 +343,7 @@ export default function BookingForm() {
                     </svg>
                     <h3 className="font-montserrat font-bold text-black text-[20px]">Service Details</h3>
                   </div>
-                  <p className="font-montserrat text-black text-[14px]">Tell us what services you need</p>
+                  <p className="font-montserrat text-black text-[14px] text-center">Tell us what services you need</p>
                 </div>
 
                 {/* Form Fields */}
@@ -442,7 +442,7 @@ export default function BookingForm() {
             {currentStep === 3 && (
               <div className="animate-fadeIn">
                 {/* Form Title */}
-                <div className="mb-8">
+                <div className="mb-8 flex flex-col items-center">
                   <div className="flex items-center gap-2 mb-2">
                     <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -450,7 +450,7 @@ export default function BookingForm() {
                     </svg>
                     <h3 className="font-montserrat font-bold text-black text-[20px]">Confirm Your Details</h3>
                   </div>
-                  <p className="font-montserrat text-black text-[14px]">Please review your information before submitting</p>
+                  <p className="font-montserrat text-black text-[14px] text-center">Please review your information before submitting</p>
                 </div>
 
                 {/* Error Message */}

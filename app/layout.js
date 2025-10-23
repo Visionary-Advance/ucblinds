@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Montserrat, Inter, Roboto } from "next/font/google";
 import "./globals.css";
+import Footer from "@/Components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} ${roboto.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
