@@ -74,7 +74,7 @@ export default function ServiceHome() {
               lg:opacity-0 lg:group-hover:opacity-100
             `}>{service.description}</p>
           </div>
-          <button className={`bg-brand-blue hover:brightness-90 text-white font-bold text-sm px-6 py-3 rounded-[5px] transition-colors duration-200 w-fit
+          <button className={`bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-sm px-6 py-3 rounded-[5px] transition-colors duration-200 w-fit
             ${isExpanded ? 'opacity-100' : 'opacity-0'}
             lg:opacity-0 lg:group-hover:opacity-100
           `}>
@@ -86,7 +86,7 @@ export default function ServiceHome() {
   };
 
   return (
-    <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-brand-blue to-brand-blue-light">
+    <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br to-[#9fd7e9] from-[#357cce]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -108,23 +108,29 @@ export default function ServiceHome() {
         {/* Desktop Layout - Hidden on mobile */}
         <div className="hidden lg:block">
           {/* Row 1 - 3 items */}
-          <div className="grid grid-cols-3 gap-4 mb-4">
+          <div className="grid grid-cols-3 gap-5 mb-5">
             <ServiceCard service={services[0]} />
             <ServiceCard service={services[1]} />
             <ServiceCard service={services[2]} />
           </div>
 
           {/* Row 2 - 2 items centered */}
-          <div className="flex justify-center gap-4">
-            <ServiceCard service={services[3]} />
-            <ServiceCard service={services[4]} />
+          <div className="flex  justify-center gap-5">
+            <div className="w-full max-w-[calc(33.333%-0.67rem)]">
+              <ServiceCard service={services[3]} />
+            </div>
+            <div className="w-full max-w-[calc(33.333%-0.67rem)]">
+              <ServiceCard service={services[4]} />
+            </div>
           </div>
         </div>
 
         {/* Mobile Layout - Hidden on desktop */}
-        <div className="lg:hidden flex flex-col gap-4 items-center">
+        <div className="lg:hidden flex flex-col gap-5 items-center">
           {services.map((service) => (
-            <ServiceCard service={service} />
+            <div key={service.id} className="w-full max-w-[280px]">
+              <ServiceCard service={service} />
+            </div>
           ))}
         </div>
       </div>

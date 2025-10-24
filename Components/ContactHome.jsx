@@ -123,7 +123,7 @@ export default function ContactHome() {
       </ParallaxBackground>
 
       {/* Mobile Form - Overlapping background and white space */}
-      <div className="lg:hidden bg-white pb-16 -mb-64">
+      <div className="lg:hidden  pb-16 -mb-64">
         <div className="px-4 -translate-y-64 flex justify-center">
           <BookingForm />
         </div>

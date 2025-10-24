@@ -6,10 +6,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-gray-100 py-8 px-4 md:px-8 lg:px-16">
-      <div className="max-w-11/12 mx-auto">
+    <footer className="w-full bg-gray-50 py-8 px-4 md:px-8 lg:px-16">
+      <div className=" mx-auto">
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-5 gap-8 mb-8">
+        <div className="hidden lg:grid lg:grid-cols-5 justify-center mb-8">
           {/* Logo and Brand */}
           <div className="flex items-start gap-4">
             <div className="relative w-[90px] h-[90px] flex-shrink-0">
@@ -20,7 +20,7 @@ export default function Footer() {
                 className=""
               />
             </div>
-            <h2 className="text-4xl font-montserrat font-bold text-black mt-2">UCBlinds</h2>
+            <h2 className="text-3xl font-montserrat font-bold text-black mt-2">UCBlinds</h2>
           </div>
 
           {/* Social Media */}
@@ -44,17 +44,17 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-black mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-lh text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/about" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-lh text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/services" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-lh text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/contact" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -66,17 +66,17 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-black mb-4">Useful Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/privacy" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/privacy" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/warranty" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/warranty" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Warranty
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/terms" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Terms of Use
                 </Link>
               </li>
@@ -87,10 +87,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold text-black mb-4">Areas We Serve</h3>
             <ul className="space-y-3">
-              <li className="text-xl text-black/90">Eugene</li>
-              <li className="text-xl text-black/90">Bend</li>
-              <li className="text-xl text-black/90">Springfield</li>
-              <li className="text-xl text-black/90">Woodburn</li>
+              <li className=" text-black/90">Eugene</li>
+              <li className=" text-black/90">Bend</li>
+              <li className=" text-black/90">Springfield</li>
+              <li className=" text-black/90">Woodburn</li>
             </ul>
           </div>
         </div>
@@ -186,7 +186,8 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-300 pt-6 text-center">
-          <p className="text-xl text-black">Copyright © {currentYear} UC Blinds</p>
+          <p className="text-sm text-black">Copyright © {currentYear} UC Blinds</p>
+          <p className="text-sm text-black/30">Powered By <a href='https://visionaryadvance.com' target='_blank' rel='noopener noreferrer'>Visionary Advance</a></p>
         </div>
       </div>
     </footer>
