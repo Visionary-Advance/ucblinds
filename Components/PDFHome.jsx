@@ -13,14 +13,14 @@ export default function PDFHome() {
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
                   Get your FREE PDF to start measuring your blinds today!
                 </h2>
-                <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+                <p className="text-xl  text-white/90 leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
               </div>
 
               {/* Right Content - PDF Icon and Button */}
               <div className="relative flex flex-col items-center justify-center px-8 -translate-y-12">
-                <div className="relative w-[420px] h-[420px] mb-6 ">
+                <div className="relative w-[375px] h-[375px] mb-6 ">
                   <Image
                     src="/Img/pdf-icon.png"
                     alt="PDF Document Icon"

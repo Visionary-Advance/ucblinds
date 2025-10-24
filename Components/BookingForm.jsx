@@ -121,7 +121,7 @@ export default function BookingForm() {
           {/* Step 1 */}
           <div className="flex flex-col items-center gap-1">
             <div className={`w-[40px] h-[40px] rounded-full flex items-center justify-center transition-colors duration-300 ${
-              currentStep >= 1 ? 'bg-[#357cce]' : 'bg-[#989898]'
+              currentStep >= 1 ? 'bg-brand-blue' : 'bg-[#989898]'
             }`}>
               <span className="font-montserrat font-bold text-white text-[20px]">1</span>
             </div>
@@ -131,7 +131,7 @@ export default function BookingForm() {
           {/* Line between 1 and 2 */}
           <div className="flex-1 h-[2px] bg-white/40 mx-2 relative overflow-hidden mb-4">
             <div
-              className={`absolute top-0 left-0 h-full bg-[#357cce] transition-all duration-500 ${
+              className={`absolute top-0 left-0 h-full bg-brand-blue transition-all duration-500 ${
                 currentStep >= 2 ? 'w-full' : 'w-0'
               }`}
             ></div>
@@ -140,7 +140,7 @@ export default function BookingForm() {
           {/* Step 2 */}
           <div className="flex flex-col items-center gap-1">
             <div className={`w-[40px] h-[40px] rounded-full flex items-center justify-center transition-colors duration-300 ${
-              currentStep >= 2 ? 'bg-[#357cce]' : 'bg-[#989898]'
+              currentStep >= 2 ? 'bg-brand-blue' : 'bg-[#989898]'
             }`}>
               <span className="font-montserrat font-bold text-white text-[20px]">2</span>
             </div>
@@ -150,7 +150,7 @@ export default function BookingForm() {
           {/* Line between 2 and 3 */}
           <div className="flex-1 h-[2px] bg-white/40 mx-2 relative overflow-hidden mb-4">
             <div
-              className={`absolute top-0 left-0 h-full bg-[#357cce] transition-all duration-500 ${
+              className={`absolute top-0 left-0 h-full bg-brand-blue transition-all duration-500 ${
                 currentStep >= 3 ? 'w-full' : 'w-0'
               }`}
             ></div>
@@ -159,7 +159,7 @@ export default function BookingForm() {
           {/* Step 3 */}
           <div className="flex flex-col items-center gap-1">
             <div className={`w-[40px] h-[40px] rounded-full flex items-center justify-center transition-colors duration-300 ${
-              currentStep >= 3 ? 'bg-[#357cce]' : 'bg-[#989898]'
+              currentStep >= 3 ? 'bg-brand-blue' : 'bg-[#989898]'
             }`}>
               <span className="font-montserrat font-bold text-white text-[20px]">3</span>
             </div>
@@ -174,7 +174,7 @@ export default function BookingForm() {
         {isSubmitted ? (
           <div className="animate-fadeIn flex flex-col items-center justify-center py-16">
             {/* Blue Circle with Checkmark */}
-            <div className="w-[100px] h-[100px] rounded-full bg-[#357cce] flex items-center justify-center mb-6">
+            <div className="w-[100px] h-[100px] rounded-full bg-brand-blue flex items-center justify-center mb-6">
               <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
@@ -286,7 +286,7 @@ export default function BookingForm() {
                         onClick={() => handleContactMethodChange('phone')}
                         className={`flex-1 h-[55px] rounded-[5px] font-montserrat font-bold text-[16px] transition-colors ${
                           formData.contactMethod === 'phone'
-                            ? 'bg-[#357cce] text-white border border-[#357cce]'
+                            ? 'bg-brand-blue text-white border border-brand-blue'
                             : 'bg-neutral-100 text-black/50 border border-black/40'
                         }`}
                       >
@@ -297,7 +297,7 @@ export default function BookingForm() {
                         onClick={() => handleContactMethodChange('text')}
                         className={`flex-1 h-[55px] rounded-[5px] font-montserrat font-bold text-[16px] transition-colors ${
                           formData.contactMethod === 'text'
-                            ? 'bg-[#357cce] text-white border border-[#357cce]'
+                            ? 'bg-brand-blue text-white border border-brand-blue'
                             : 'bg-neutral-100 text-black/50 border border-black/40'
                         }`}
                       >
@@ -308,7 +308,7 @@ export default function BookingForm() {
                         onClick={() => handleContactMethodChange('email')}
                         className={`flex-1 h-[55px] rounded-[5px] font-montserrat font-bold text-[16px] transition-colors ${
                           formData.contactMethod === 'email'
-                            ? 'bg-[#357cce] text-white border border-[#357cce]'
+                            ? 'bg-brand-blue text-white border border-brand-blue'
                             : 'bg-neutral-100 text-black/50 border border-black/40'
                         }`}
                       >
@@ -322,7 +322,7 @@ export default function BookingForm() {
                     <button
                       type="button"
                       onClick={handleNext}
-                      className="bg-[#357cce] text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
+                      className="bg-brand-blue text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
                     >
                       Next
                     </button>
@@ -361,7 +361,7 @@ export default function BookingForm() {
                           onClick={() => toggleServiceType(service)}
                           className={`h-[45px] rounded-[5px] font-montserrat font-bold text-[14px] transition-colors ${
                             formData.serviceType.includes(service)
-                              ? 'bg-[#357cce] text-white border border-[#357cce]'
+                              ? 'bg-brand-blue text-white border border-brand-blue'
                               : 'bg-neutral-100 text-black/50 border border-black/40'
                           }`}
                         >
@@ -384,7 +384,7 @@ export default function BookingForm() {
                           onClick={() => toggleBlindType(type)}
                           className={`h-[45px] rounded-[5px] font-montserrat font-bold text-[14px] transition-colors ${
                             formData.blindTypes.includes(type)
-                              ? 'bg-[#357cce] text-white border border-[#357cce]'
+                              ? 'bg-brand-blue text-white border border-brand-blue'
                               : 'bg-neutral-100 text-black/50 border border-black/40'
                           }`}
                         >
@@ -407,7 +407,7 @@ export default function BookingForm() {
                           onClick={() => handleInputChange('urgency', urgency)}
                           className={`h-[45px] rounded-[5px] font-montserrat font-bold text-[14px] transition-colors ${
                             formData.urgency === urgency
-                              ? 'bg-[#357cce] text-white border border-[#357cce]'
+                              ? 'bg-brand-blue text-white border border-brand-blue'
                               : 'bg-neutral-100 text-black/50 border border-black/40'
                           }`}
                         >
@@ -429,7 +429,7 @@ export default function BookingForm() {
                     <button
                       type="button"
                       onClick={handleNext}
-                      className="bg-[#357cce] text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
+                      className="bg-brand-blue text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
                     >
                       Next
                     </button>
@@ -481,7 +481,7 @@ export default function BookingForm() {
                       <button
                         type="button"
                         onClick={() => handleEdit(1)}
-                        className="text-[#357cce] font-montserrat font-bold text-[14px] hover:opacity-80"
+                        className="text-brand-blue font-montserrat font-bold text-[14px] hover:opacity-80"
                       >
                         Edit
                       </button>
@@ -502,7 +502,7 @@ export default function BookingForm() {
                       <button
                         type="button"
                         onClick={() => handleEdit(2)}
-                        className="text-[#357cce] font-montserrat font-bold text-[14px] hover:opacity-80"
+                        className="text-brand-blue font-montserrat font-bold text-[14px] hover:opacity-80"
                       >
                         Edit
                       </button>
@@ -527,7 +527,7 @@ export default function BookingForm() {
                   <button
                     type="button"
                     onClick={handleSubmit}
-                    className="bg-[#357cce] text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
+                    className="bg-brand-blue text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
                   >
                     Submit
                   </button>

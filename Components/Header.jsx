@@ -10,18 +10,18 @@ export default function Header() {
   return (
     <>
       {/* Top Blue Bar */}
-      <div className="absolute top-0 left-0 right-0 bg-[#357cce] h-[50px] md:h-[50px] z-50">
+      <div className="absolute top-0 left-0 right-0 bg-brand-blue h-[50px] md:h-[50px] z-50">
         <div className="max-w-[1850px] mx-auto h-full flex items-center justify-center gap-2 md:gap-4 px-4 md:px-8">
           {/* Text Contact Button */}
           <div className="flex items-center gap-2 bg-neutral-100 rounded-[5px] px-3 md:px-4 py-2 h-[36px] md:h-[40px]">
-            <MessageSquareText className="w-5 h-5 md:w-6 md:h-6 text-[#357cce]" />
-            <span className="text-[#357cce] font-inter text-[13px] md:text-[15px]">541-343-8000</span>
+            <MessageSquareText className="w-5 h-5 md:w-6 md:h-6 text-brand-blue" />
+            <span className="text-brand-blue font-inter text-[13px] md:text-[15px]">541-343-8000</span>
           </div>
 
           {/* Phone Contact Button */}
           <div className="flex items-center gap-2 bg-neutral-100 rounded-[5px] px-3 md:px-4 py-2 h-[36px] md:h-[40px]">
-            <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#357cce]" />
-            <span className="text-[#357cce] font-inter text-[13px] md:text-[15px]">541-343-8000</span>
+            <Phone className="w-5 h-5 md:w-6 md:h-6 text-brand-blue" />
+            <span className="text-brand-blue font-inter text-[13px] md:text-[15px]">541-343-8000</span>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Header() {
             </button>
 
             {/* Desktop Book Now Button - Hidden on mobile */}
-            <button className="ml-auto hidden lg:block bg-[#357cce] text-white font-montserrat font-bold text-[18px] px-5 py-2 cursor-pointer rounded-[5px] hover:bg-[#1d6fcd] transition duration-150">
+            <button className="ml-auto hidden lg:block bg-brand-blue text-white font-montserrat font-bold text-[18px] px-5 py-2 cursor-pointer rounded-[5px] hover:brightness-90 transition duration-150">
               Book Now
             </button>
           </div>
@@ -93,7 +93,7 @@ export default function Header() {
         >
           {/* Menu Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="font-montserrat font-bold text-[#357cce] text-[24px]">Menu</h2>
+            <h2 className="font-montserrat font-bold text-brand-blue text-[24px]">Menu</h2>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -107,28 +107,28 @@ export default function Header() {
           <nav className="flex flex-col p-6 space-y-4">
             <Link
               href="/"
-              className="text-gray-800 font-inter text-[18px] hover:text-[#357cce] transition-colors py-2"
+              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/services"
-              className="text-gray-800 font-inter text-[18px] hover:text-[#357cce] transition-colors py-2"
+              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-gray-800 font-inter text-[18px] hover:text-[#357cce] transition-colors py-2"
+              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-gray-800 font-inter text-[18px] hover:text-[#357cce] transition-colors py-2"
+              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
@@ -138,7 +138,7 @@ export default function Header() {
           {/* Mobile Book Now Button */}
           <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200">
             <button
-              className="w-full bg-[#357cce] text-white font-montserrat font-bold text-[18px] px-5 py-3 rounded-[5px] hover:bg-[#1d6fcd] transition duration-150"
+              className="w-full bg-brand-blue text-white font-montserrat font-bold text-[18px] px-5 py-3 rounded-[5px] hover:brightness-90 transition duration-150"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Book Now

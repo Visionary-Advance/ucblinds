@@ -44,17 +44,17 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-black mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/about" className="text-lh text-black/90 hover:text-[#357cce] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/services" className="text-lh text-black/90 hover:text-[#357cce] transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/contact" className="text-lh text-black/90 hover:text-[#357cce] transition-colors">
                   Contact Us
                 </Link>
               </li>

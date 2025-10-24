@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutHome() {
   return (
-    <section className="relative w-full pb-16 pt-40 px-4 md:px-8 lg:px-16">
+    <section className="relative w-full bg-gray-50 pb-16 lg:pt-20 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Image */}
@@ -22,7 +22,7 @@ export default function AboutHome() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
                 The{' '}
-                <span className="bg-gradient-to-r from-[#9fd7e9] to-[#357cce] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-brand-blue-light to-brand-blue bg-clip-text text-transparent">
                   UC Blinds
                 </span>{' '}
                 Way
@@ -67,7 +67,7 @@ export default function AboutHome() {
 
             {/* CTA Button */}
             <div>
-              <button className="bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-base px-8 py-4 rounded-[5px] transition-colors duration-200">
+              <button className="bg-brand-blue hover:brightness-90 text-white font-bold text-base px-8 py-4 rounded-[5px] transition-colors duration-200">
                 View More
               </button>
             </div>

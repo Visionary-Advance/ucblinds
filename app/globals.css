@@ -3,13 +3,20 @@
 :root {
   --background: #f5f5f5;
   --foreground: #171717;
+  --brand-blue: #357CCE;
+  --brand-blue-light: #9FD7E9;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-light: var(--brand-blue-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat);
+  --font-inter: var(--font-inter);
+  --font-roboto: var(--font-roboto);
 }
 
 
@@ -33,4 +40,13 @@ body {
 
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fluid Typography using clamp() for smooth responsive scaling */
+.text-faq-question {
+  font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+}
+
+.text-faq-answer {
+  font-size: clamp(.8rem, 1rem + 1vw, 1.25rem);
 }
