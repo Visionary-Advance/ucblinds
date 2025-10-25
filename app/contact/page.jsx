@@ -61,7 +61,7 @@ export default function Contact(){
         <>
 
         <section className="w-full">
-            <h2 className="font-montserrat lg:w-10/12 text-center py-8 mx-auto text-[2.86rem] lg:text-6xl text-black font-bold">Contact Us Now</h2>
+            <h2 className="font-montserrat lg:w-10/12 lg:text-left text-center py-8 mx-auto text-[2.86rem] lg:text-6xl text-black font-bold">Contact Us Now</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2">
 
                 <div className="col-span-1 lg:translate-x-10 mx-auto lg:w-5/12 w-11/12 z-40 mb-10">
