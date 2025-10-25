@@ -1,41 +1,10 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
+import { services } from '@/lib/services';
 
 export default function ServiceHome() {
-  const services = [
-    {
-      id: 1,
-      title: 'Residential Blinds',
-      image: '/Img/window-blinds-repair.png',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing',
-    },
-    {
-      id: 2,
-      title: 'Blinds Repair',
-      image: '/Img/window-blinds-repair.png',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing',
-    },
-    {
-      id: 3,
-      title: 'Blinds Cleaning',
-      image: '/Img/window-blinds-repair.png',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing',
-    },
-    {
-      id: 4,
-      title: 'New Blinds',
-      image: '/Img/window-blinds-repair.png',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing',
-    },
-    {
-      id: 5,
-      title: 'Blind Quotes',
-      image: '/Img/window-blinds-repair.png',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing',
-    },
-  ];
-
   // Service Card Component with hover/tap effect
   const ServiceCard = ({ service }) => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -72,14 +41,16 @@ export default function ServiceHome() {
             <p className={`text-lg text-white transition-opacity duration-300 delay-100
               ${isExpanded ? 'opacity-100' : 'opacity-0'}
               lg:opacity-0 lg:group-hover:opacity-100
-            `}>{service.description}</p>
+            `}>{service.shortDescription}</p>
           </div>
-          <button className={`bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-sm px-6 py-3 rounded-[5px] transition-colors duration-200 w-fit
+          <Link
+            href={`/services/${service.slug}`}
+            className={`bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-sm px-6 py-3 rounded-[5px] transition-colors duration-200 w-fit
             ${isExpanded ? 'opacity-100' : 'opacity-0'}
             lg:opacity-0 lg:group-hover:opacity-100
           `}>
-            Next
-          </button>
+            Learn More
+          </Link>
         </div>
       </div>
     );

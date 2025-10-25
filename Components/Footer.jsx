@@ -133,17 +133,17 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-black mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/about" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/services" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/contact" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -155,17 +155,17 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-black mb-4">Useful Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/privacy" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/privacy" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/warranty" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/warranty" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   Warranty
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-xl text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/terms" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   Terms of Use
                 </Link>
               </li>
@@ -176,10 +176,10 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold text-black mb-4">Areas We Serve</h3>
             <ul className="space-y-3">
-              <li className="text-xl text-black/90">Eugene</li>
-              <li className="text-xl text-black/90">Bend</li>
-              <li className="text-xl text-black/90">Springfield</li>
-              <li className="text-xl text-black/90">Woodburn</li>
+              <li className="text-lg text-black/90">Eugene</li>
+              <li className="text-lg text-black/90">Bend</li>
+              <li className="text-lg text-black/90">Springfield</li>
+              <li className="text-lg text-black/90">Woodburn</li>
             </ul>
           </div>
         </div>
