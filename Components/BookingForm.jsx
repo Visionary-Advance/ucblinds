@@ -113,7 +113,7 @@ export default function BookingForm() {
   };
 
   return (
-    <div className="w-full lg:min-w-[500px] shadow-2xl max-w-[500px] flex-shrink-0 bg-neutral-100 rounded-[20px] overflow-hidden">
+    <div className="w-full lg:min-w-[500px] shadow-2xl lg:max-w-[500px] flex-shrink-0 bg-neutral-100 rounded-[20px] overflow-hidden">
       {/* Form Header */}
       <div className="bg-[#5d5d5d] h-[90px] px-5 pt-6">
         {/* Step Indicators */}
