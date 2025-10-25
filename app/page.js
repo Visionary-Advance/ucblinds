@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-import Header from "@/Components/Header";
 import BookingForm from "@/Components/BookingForm";
 import AboutHome from "@/Components/AboutHome";
 import ServiceHome from "@/Components/ServiceHome";
@@ -13,8 +12,6 @@ import ParallaxBackground from "@/Components/ParallaxBackground";
 export default function LandingPage() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
-      {/* Header Component */}
-      <Header />
 
       {/* Hero Section with Parallax Background */}
       <ParallaxBackground
