@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutHome() {
   return (
@@ -67,9 +68,11 @@ export default function AboutHome() {
 
             {/* CTA Button */}
             <div>
-              <button className="bg-brand-blue hover:brightness-90 text-white font-bold text-base px-8 py-4 rounded-[5px] transition-colors duration-200">
+              <Link href={"/about"}>
+              <button className="bg-brand-blue cursor-pointer hover:brightness-90 text-white font-bold text-base px-8 py-4 rounded-[5px] transition-colors duration-200">
                 View More
               </button>
+              </Link>
             </div>
           </div>
         </div>
