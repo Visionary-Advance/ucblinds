@@ -8,6 +8,7 @@ import BlindsVid from "@/Components/BlindsVid";
 import PDFHome from "@/Components/PDFHome";
 import ContactHome from "@/Components/ContactHome";
 import ParallaxBackground from "@/Components/ParallaxBackground";
+import ScrollToTop from "@/Components/ScrollToTop";
 
 export default function LandingPage() {
   return (
@@ -66,6 +67,9 @@ export default function LandingPage() {
 
       {/* Contact Section */}
       <ContactHome />
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 }
