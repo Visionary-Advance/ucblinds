@@ -28,10 +28,13 @@ export default function LandingPage() {
               {/* Left Content */}
               <div className="space-y-6 lg:space-y-8 w-10/12">
                 <h2 className="font-montserrat font-bold text-white text-[40px] lg:text-[4rem] leading-tight">
-                  Schedule Professional Blind Cleaning & Repair Services
+                 We’ve got you covered.
                 </h2>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
-                  We specialize in deep cleaning and expert repair of all window blind types, restoring them to like-new condition while saving you money on replacements.
+                 Residential Blind Cleaning, Blind Repair & Blind Replacement
+Convenient pickup service and fast turnaround — often same day within Lane County.
+Call, Text or Fill out our form to Get a Free Home Estimate
+
                 </p>
               </div>
               {/* Desktop Form - Inside background */}
@@ -52,12 +55,12 @@ export default function LandingPage() {
 
       {/* About Section */}
       <AboutHome />
+      <TestimonialsHome />
 
       {/* Services Section */}
       <ServiceHome />
 
       {/* Testimonials Section */}
-      <TestimonialsHome />
 
       {/* Video Section */}
       <BlindsVid />

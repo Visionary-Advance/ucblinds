@@ -18,7 +18,7 @@ export default function ServiceHome() {
 
     return (
       <div
-        className="relative h-[280px] w-[320px] rounded-[20px] overflow-hidden group cursor-pointer"
+        className="relative h-[350px] w-full rounded-[20px] overflow-hidden group cursor-pointer"
         onClick={handleMobileClick}
       >
         {/* Background Image */}
@@ -32,13 +32,13 @@ export default function ServiceHome() {
         </div>
 
         {/* Hover/Tap State - Slides up from bottom */}
-        <div className={`absolute inset-x-0 bottom-0 bg-black/65 p-4 flex flex-col justify-between transition-transform duration-300 ease-in-out h-full
-          ${isExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-60px)]'}
-          lg:translate-y-[calc(100%-60px)] lg:group-hover:translate-y-0
+        <div className={`absolute inset-x-0 bottom-0 bg-black/65 p-6 flex flex-col justify-between transition-transform duration-300 ease-in-out h-full
+          ${isExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-70px)]'}
+          lg:translate-y-[calc(100%-70px)] lg:group-hover:translate-y-0
         `}>
           <div>
-            <h3 className="text-2xl text-white font-normal mb-3">{service.title}</h3>
-            <p className={`text-lg text-white transition-opacity duration-300 delay-100
+            <h3 className="text-2xl text-white font-normal mb-4">{service.title}</h3>
+            <p className={`text-base text-white transition-opacity duration-300 delay-100 leading-relaxed
               ${isExpanded ? 'opacity-100' : 'opacity-0'}
               lg:opacity-0 lg:group-hover:opacity-100
             `}>{service.shortDescription}</p>
@@ -71,38 +71,32 @@ export default function ServiceHome() {
               className="w-full"
             />
           </div>
-          <p className="text-xl md:text-2xl text-white/80 max-w-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl">
+            Whether your blinds need deep cleaning, expert repair, or full replacement, our team makes the process easy and stress-free with fast turnaround and professional service.
           </p>
         </div>
 
         {/* Desktop Layout - Hidden on mobile */}
         <div className="hidden lg:block">
-          {/* Row 1 - 3 items */}
-          <div className="grid grid-cols-3 gap-5 mb-5">
-            <ServiceCard service={services[0]} />
-            <ServiceCard service={services[1]} />
-            <ServiceCard service={services[2]} />
-          </div>
-
-          {/* Row 2 - 2 items centered */}
-          <div className="flex  justify-center gap-5">
-            <div className="w-full max-w-[calc(33.333%-0.67rem)]">
-              <ServiceCard service={services[3]} />
-            </div>
-            <div className="w-full max-w-[calc(33.333%-0.67rem)]">
-              <ServiceCard service={services[4]} />
-            </div>
+          {/* Main 3 services */}
+          <div className="grid grid-cols-3 gap-5">
+            <ServiceCard service={{...services[0], slug: 'residential-blind-cleaning'}} />
+            <ServiceCard service={{...services[1], slug: 'blind-repair-services'}} />
+            <ServiceCard service={{...services[3], slug: 'replacement'}} />
           </div>
         </div>
 
         {/* Mobile Layout - Hidden on desktop */}
         <div className="lg:hidden flex flex-col gap-5 items-center">
-          {services.map((service) => (
-            <div key={service.id} className="w-full max-w-[280px]">
-              <ServiceCard service={service} />
-            </div>
-          ))}
+          <div className="w-full max-w-[350px]">
+            <ServiceCard service={{...services[0], slug: 'residential-blind-cleaning'}} />
+          </div>
+          <div className="w-full max-w-[350px]">
+            <ServiceCard service={{...services[1], slug: 'blind-repair-services'}} />
+          </div>
+          <div className="w-full max-w-[350px]">
+            <ServiceCard service={{...services[3], slug: 'replacement'}} />
+          </div>
         </div>
       </div>
     </section>
