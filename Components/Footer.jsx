@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Circle } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,7 +20,16 @@ export default function Footer() {
                 className=""
               />
             </div>
-            <h2 className="text-3xl font-montserrat font-bold text-black mt-2">UCBlinds</h2>
+            <div className="flex flex-col mt-2">
+              <h2 className="text-3xl font-montserrat font-bold text-black">UCBlinds</h2>
+              <div className="flex items-center gap-2 text-black/80 text-[12px] font-inter tracking-wide mt-1">
+                <span>Clean</span>
+                <Circle className="w-1 h-1 fill-current" />
+                <span>Repair</span>
+                <Circle className="w-1 h-1 fill-current" />
+                <span>Replace</span>
+              </div>
+            </div>
           </div>
 
           {/* Social Media */}
@@ -108,7 +117,16 @@ export default function Footer() {
                 className=""
               />
             </div>
-            <h2 className="text-3xl font-bold text-black">UCBlinds</h2>
+            <div className="flex flex-col">
+              <h2 className="text-3xl font-bold text-black">UCBlinds</h2>
+              <div className="flex items-center gap-1.5 text-black/80 text-[11px] font-inter tracking-wide mt-0.5">
+                <span>Clean</span>
+                <Circle className="w-1 h-1 fill-current" />
+                <span>Repair</span>
+                <Circle className="w-1 h-1 fill-current" />
+                <span>Replace</span>
+              </div>
+            </div>
           </div>
 
 

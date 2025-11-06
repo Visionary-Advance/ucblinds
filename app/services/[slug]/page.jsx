@@ -110,11 +110,12 @@ export default function ServiceDetailPage({ params }) {
 
           {/* CTA Button */}
           <div className="flex justify-center mt-16">
+            
             <Link
               href="/contact"
               className="bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-lg px-8 py-4 rounded-[5px] transition-colors duration-200"
             >
-              Request a Quote Today
+             {service.cta}
             </Link>
           </div>
         </div>

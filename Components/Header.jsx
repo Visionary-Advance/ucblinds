@@ -1,5 +1,5 @@
 "use client"
-import { Phone, MessageSquareText, Menu, X, ChevronDown } from "lucide-react";
+import { Phone, MessageSquareText, Menu, X, ChevronDown, Circle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -55,7 +55,16 @@ export default function Header() {
                   className="object-cover"
                 />
               </div>
-              <h1 className={`font-montserrat font-bold ${logoTextColor} text-[24px] md:text-[32px]`}>UCBlinds</h1>
+              <div className="flex flex-col">
+                <h1 className={`font-montserrat font-bold ${logoTextColor} text-[24px] md:text-[32px]`}>UCBlinds</h1>
+                <div className={`flex items-center gap-1.5 md:gap-2 ${logoTextColor} text-[10px] md:text-[12px] font-inter tracking-wide`}>
+                  <span>Clean</span>
+                  <Circle className="w-1 h-1 fill-current" />
+                  <span>Repair</span>
+                  <Circle className="w-1 h-1 fill-current" />
+                  <span>Replace</span>
+                </div>
+              </div>
             </div>
 
             {/* Desktop Navigation - Hidden on mobile */}

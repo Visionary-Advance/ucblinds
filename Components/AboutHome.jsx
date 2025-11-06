@@ -22,11 +22,11 @@ export default function AboutHome() {
             {/* Heading with underline */}
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
-                The{' '}
+                Why Homeowners Choose{' '}
                 <span className="bg-gradient-to-r from-brand-blue-light to-brand-blue bg-clip-text text-transparent">
                   UC Blinds
                 </span>{' '}
-                Way
+                
               </h2>
               <div className="w-16 h-1">
                 <Image
@@ -40,30 +40,20 @@ export default function AboutHome() {
             </div>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl text-black/80 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            </p>
+            <p className="text-xl md:text-2xl xl:text-xl text-black/80 leading-relaxed">
+At UCBlinds, we help homeowners maintain and refresh their window coverings. Whether your blinds need deep cleaning, repair, or full replacement, our team makes the process easy and stress-free.            </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 md:gap-8 py-4">
-              <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-black mb-2">10+</p>
-                <p className="text-lg md:text-xl text-black">
-                  Blinds<br />Cleaned
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-black mb-2">50%</p>
-                <p className="text-lg md:text-xl text-black">
-                  Blinds<br />Cleaned
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-black mb-2">5+</p>
-                <p className="text-lg md:text-xl text-black">
-                  Blinds<br />Cleaned
-                </p>
-              </div>
+            <div className="grid grid-cols-1 gap-6  py-4 ">
+              <ul className='list-disc list-outside ml-5 space-y-2 text-black/80 text-xl'>
+                <li>We come to your home to remove your blinds for cleaning or repair</li>
+                <li>Fast turnaround — often same-day or within 24 hours in Lane County</li>
+                <li>Ultrasonic cleaning that removes dirt, grease, dust, pollen, and pet dander</li>
+                <li>Expert repairs to restore blinds you already love</li>
+                <li>Stylish replacement options when it's time to upgrade</li>
+
+
+              </ul>
             </div>
 
             {/* CTA Button */}
