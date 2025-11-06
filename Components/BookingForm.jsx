@@ -53,13 +53,19 @@ export default function BookingForm() {
 
   const handleSubmit = async () => {
     try {
-      // Simulate API call - replace with actual submission logic
-      console.log("Form submitted:", formData);
+      // Submit to Jobber API via our backend
+      const response = await fetch('/api/create-jobber-request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // Simulate random success/failure for demo
-      const isSuccess = Math.random() > 0.2; // 80% success rate
+      const result = await response.json();
 
-      if (isSuccess) {
+      if (response.ok && result.success) {
+        // Success - show success message
         setIsSubmitted(true);
         setHasError(false);
 
@@ -81,6 +87,7 @@ export default function BookingForm() {
         }, 4000);
       } else {
         // Show error
+        console.error('Jobber API error:', result.error);
         setHasError(true);
         setIsSubmitted(false);
 
