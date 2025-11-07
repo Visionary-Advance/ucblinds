@@ -25,9 +25,9 @@ export default function Footer() {
               <div className="flex items-center gap-2 text-black/80 text-[12px] font-inter tracking-wide mt-1">
                 <span>Clean</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>Repair</span>
+                <span>repair</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>Replace</span>
+                <span>replace</span>
               </div>
             </div>
           </div>
@@ -120,11 +120,11 @@ export default function Footer() {
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-black">UCBlinds</h2>
               <div className="flex items-center gap-1.5 text-black/80 text-[11px] font-inter tracking-wide mt-0.5">
-                <span>Clean</span>
+                <span>clean</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>Repair</span>
+                <span>repair</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>Replace</span>
+                <span>replace</span>
               </div>
             </div>
           </div>

@@ -111,7 +111,7 @@ export default function Header() {
                 </div>
               </div>
 
-              <Link href="/about" className={`${navTextColor} font-inter text-[18px] hover:opacity-80 transition-opacity`}>
+              <Link href="/about-us" className={`${navTextColor} font-inter text-[18px] hover:opacity-80 transition-opacity`}>
                 About
               </Link>
               <Link href="/contact" className={`${navTextColor} font-inter text-[18px] hover:opacity-80 transition-opacity`}>
@@ -217,7 +217,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="/about"
+              href="/about-us"
               className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
               onClick={() => {
                 setIsMobileMenuOpen(false);

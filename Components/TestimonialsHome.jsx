@@ -9,38 +9,38 @@ export default function TestimonialsHome() {
   const testimonials = [
     {
       id: 1,
-      name: 'John D.',
-      role: 'Customer',
+      name: 'Megan R.',
+      role: 'Eugene, OR',
       rating: 5,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+      text: 'UC Blinds completely transformed our home. The new shades look stunning, and the cleaning program keeps everything looking brand new.',
     },
     {
       id: 2,
-      name: 'John D.',
-      role: 'Customer',
+      name: 'Daniel T.',
+      role: 'Springfield, OR',
       rating: 5,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+      text: 'They handled our cellular shades with care and got them cleaner than I thought possible. Great service and communication.',
     },
     {
       id: 3,
-      name: 'John D.',
-      role: 'Customer',
+      name: 'Kristine Z.',
+      role: 'Eugene, OR',
       rating: 5,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+      text: 'Ultra Clean is our go to company for anything blind related. They have been quick and responsive to all our properties and have been so very great to work with.',
     },
     {
       id: 4,
-      name: 'Jane S.',
-      role: 'Customer',
+      name: 'Rebehah I.',
+      role: 'Eugene, OR',
       rating: 5,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+      text: 'Brett and team helped us fix 2 blinds and then purchase and install 2 skylight blinds! We were so thankful for their quick professionalism and will definitely be back for future blind needs!',
     },
     {
       id: 5,
-      name: 'Mike J.',
-      role: 'Customer',
+      name: 'Tim O.',
+      role: 'Springfield, OR',
       rating: 5,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+      text: 'The guys at Ultra Clean do a fabulous job. They come measure and install blinds at a reasonable price. They also will clean blinds as well as replace blinds that get damaged over time. Very nice folks to work with.',
     },
   ];
 
@@ -73,7 +73,7 @@ export default function TestimonialsHome() {
         <p className="font-roboto text-[#357cce] text-[150px] leading-none font-bold -mt-6 -ml-2">"</p>
 
         {/* Testimonial Text */}
-        <p className="text-black text-xl md:text-2xl font-normal -mt-16 px-2">
+        <p className="text-black text-xl md:text-xl font-normal -mt-16 px-2">
           {testimonial.text}
         </p>
       </div>
@@ -85,8 +85,8 @@ export default function TestimonialsHome() {
         </div>
         <div className="flex items-center justify-between px-2">
           <div>
-            <p className="text-black text-2xl md:text-[28px] font-bold mb-0">{testimonial.name}</p>
-            <p className="text-black/50 text-xl md:text-2xl italic">{testimonial.role}</p>
+            <p className="text-black text-2xl md:text-xl font-bold mb-0">{testimonial.name}</p>
+            <p className="text-black/50 text-xl md:text-xl italic">{testimonial.role}</p>
           </div>
           <StarRating rating={testimonial.rating} />
         </div>
@@ -101,7 +101,7 @@ export default function TestimonialsHome() {
         <div className="mb-12">
           {/* Title and Navigation Arrows */}
           <div className="flex justify-between items-center mb-2">
-            <h2 className="text-4xl md:text-5xl font-bold text-black">Testimonials</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-black">What our Customers Say</h2>
 
             {/* Navigation Arrows - All screens */}
             <div className="flex gap-3 lg:gap-4">
@@ -133,9 +133,7 @@ export default function TestimonialsHome() {
                 className="w-full"
               />
             </div>
-            <p className="text-xl md:text-2xl text-black/80 max-w-2xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+            
           </div>
         </div>
 

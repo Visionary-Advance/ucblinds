@@ -16,9 +16,13 @@ export default function ServiceHome() {
       }
     };
 
+    // Determine the initial visible height based on title length
+    const titleNeedsMoreSpace = service.title.length > 30;
+    const initialOffset = titleNeedsMoreSpace ? '90px' : '70px';
+
     return (
       <div
-        className="relative h-[350px] w-full rounded-[20px] overflow-hidden group cursor-pointer"
+        className="relative h-[400px] w-full rounded-[20px] overflow-hidden group cursor-pointer"
         onClick={handleMobileClick}
       >
         {/* Background Image */}
@@ -32,12 +36,12 @@ export default function ServiceHome() {
         </div>
 
         {/* Hover/Tap State - Slides up from bottom */}
-        <div className={`absolute inset-x-0 bottom-0 bg-black/65 p-6 flex flex-col justify-between transition-transform duration-300 ease-in-out h-full
-          ${isExpanded ? 'translate-y-0' : 'translate-y-[calc(100%-70px)]'}
-          lg:translate-y-[calc(100%-70px)] lg:group-hover:translate-y-0
+        <div className={`absolute inset-x-0 bottom-0 bg-black/65 p-5 flex flex-col justify-between transition-transform duration-300 ease-in-out h-full
+          ${isExpanded ? 'translate-y-0' : `translate-y-[calc(100%-${initialOffset})]`}
+          lg:translate-y-[calc(100%-${initialOffset})] lg:group-hover:translate-y-0
         `}>
           <div>
-            <h3 className="text-2xl text-white font-normal mb-4">{service.title}</h3>
+            <h3 className="text-2xl text-white font-normal mb-4 leading-tight">{service.title}</h3>
             <p className={`text-base text-white transition-opacity duration-300 delay-100 leading-relaxed
               ${isExpanded ? 'opacity-100' : 'opacity-0'}
               lg:opacity-0 lg:group-hover:opacity-100
@@ -71,7 +75,7 @@ export default function ServiceHome() {
               className="w-full"
             />
           </div>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl">
+          <p className="text-xl md:text-xl text-white/90 max-w-3xl">
             Whether your blinds need deep cleaning, expert repair, or full replacement, our team makes the process easy and stress-free with fast turnaround and professional service.
           </p>
         </div>
@@ -80,22 +84,22 @@ export default function ServiceHome() {
         <div className="hidden lg:block">
           {/* Main 3 services */}
           <div className="grid grid-cols-3 gap-5">
-            <ServiceCard service={{...services[0], slug: 'residential-blind-cleaning'}} />
-            <ServiceCard service={{...services[1], slug: 'blind-repair-services'}} />
-            <ServiceCard service={{...services[3], slug: 'replacement'}} />
+            <ServiceCard service={services[0]} />
+            <ServiceCard service={services[1]} />
+            <ServiceCard service={services[2]} />
           </div>
         </div>
 
         {/* Mobile Layout - Hidden on desktop */}
         <div className="lg:hidden flex flex-col gap-5 items-center">
           <div className="w-full max-w-[350px]">
-            <ServiceCard service={{...services[0], slug: 'residential-blind-cleaning'}} />
+            <ServiceCard service={services[0]} />
           </div>
           <div className="w-full max-w-[350px]">
-            <ServiceCard service={{...services[1], slug: 'blind-repair-services'}} />
+            <ServiceCard service={services[1]} />
           </div>
           <div className="w-full max-w-[350px]">
-            <ServiceCard service={{...services[3], slug: 'replacement'}} />
+            <ServiceCard service={services[2]} />
           </div>
         </div>
       </div>

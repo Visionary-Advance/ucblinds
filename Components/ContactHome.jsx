@@ -72,8 +72,7 @@ export default function ContactHome() {
                   />
                 </div>
                 <p className="text-xl text-white/80 mb-12 max-w-2xl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </p>
+Ready for a free quote, design consultation, or professional cleaning service? We'd love to hear from you.</p>
 
                 {/* FAQ Accordion */}
                 <div className="space-y-4">

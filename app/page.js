@@ -16,19 +16,20 @@ export default function LandingPage() {
 
       {/* Hero Section with Parallax Background */}
       <ParallaxBackground
-        imageSrc="/Img/bali-roller-shades.png"
+        imageSrc="/Img/rollerhades_creme.webp"
         alt="Window blinds background"
         speed={0.2}
         overlayClass="bg-black/30"
         className="w-full mt-[50px] pb-10 lg:pb-0 min-h-[900px] lg:min-h-[991px]"
       >
-        <div className="justify-center lg:pt-[200px] pt-[150px] px-4 lg:px-8 pb-16 lg:pb-0">
-          <div className="max-w-[1650px] mx-auto">
+        <div className="justify-center lg:pt-[200px] pt-[120px] px-4 lg:px-8 pb-16 lg:pb-0">
+          <div className="max-w-[1500px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
-              <div className="space-y-6 lg:space-y-8 w-10/12">
+              <div className="space-y-6 lg:space-y-8 lg:w-10/12">
                 <h2 className="font-montserrat font-bold text-white text-[40px] lg:text-[4rem] leading-tight">
-                 We’ve got you covered.
+                 Premium Window Coverings &amp; Ultrasonic Blind Cleaning in Lane
+County and Beyond
                 </h2>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
                  Residential Blind Cleaning, Blind Repair & Blind Replacement

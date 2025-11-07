@@ -40,17 +40,29 @@ export default function AboutHome() {
             </div>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl xl:text-xl text-black/80 leading-relaxed">
-At UCBlinds, we help homeowners maintain and refresh their window coverings. Whether your blinds need deep cleaning, repair, or full replacement, our team makes the process easy and stress-free.            </p>
+            <p className="text-xl md:text-2xl xl:text-lg text-black/80 leading-relaxed">
+At UC Blinds, we believe every home deserves beautiful, functional window coverings
+— and service that lasts long after installation.
+We design, install, and maintain high-quality blinds, shades, and shutters for homes and
+businesses across Lane County, Roseburg, Bend, Woodburn, Florence, and
+neighboring communities.
+Whether you’re upgrading to modern cellular shades or giving your existing blinds new
+life with our ultrasonic cleaning technology, UC Blinds delivers results that look
+better, last longer, and cost less over time. </p>
 
             {/* Stats */}
             <div className="grid grid-cols-1 gap-6  py-4 ">
-              <ul className='list-disc list-outside ml-5 space-y-2 text-black/80 text-xl'>
-                <li>We come to your home to remove your blinds for cleaning or repair</li>
-                <li>Fast turnaround — often same-day or within 24 hours in Lane County</li>
-                <li>Ultrasonic cleaning that removes dirt, grease, dust, pollen, and pet dander</li>
-                <li>Expert repairs to restore blinds you already love</li>
-                <li>Stylish replacement options when it's time to upgrade</li>
+              <ul className='list-disc list-outside ml-5 space-y-2 text-black/80 text-lg'>
+                <li><span className='font-bold text-black text-xl'>Full-Service Experts –</span> From new window coverings to cleaning, repair, and
+installation, we handle every stage with precision and care.</li>
+                <li><span className='font-bold text-black text-xl'>Lifetime Cleaning Discount –</span> Buy your blinds or shades from UC Blinds and
+enjoy discounted professional cleaning for life.</li>
+                <li><span className='font-bold text-black text-xl'>Ultrasonic Cleaning Technology –</span> Our state-of-the-art system cleans deeper
+and more gently than any traditional method.</li>
+                <li><span className="font-bold text-black text-xl" >Specialty in Cellular Shades –</span>We’re one of the few companies in Oregon
+trained and equipped to safely clean delicate cellular or honeycomb shades.</li>
+                <li><span className='font-bold text-black text-xl'>Local &amp; Licensed –</span> Family-owned, Oregon CCB #226429, proudly serving Lane
+County and surrounding regions.</li>
 
 
               </ul>

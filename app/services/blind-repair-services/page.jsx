@@ -136,14 +136,14 @@ export default function RepairPage() {
           {/* Process Section */}
           <div className="bg-white p-8 rounded-[20px] shadow-sm mb-12">
             <h3 className="text-2xl font-bold text-black mb-6 text-center">Our Repair Process</h3>
-            <div className="max-w-3xl mx-auto space-y-6">
+            <div className="max-w-3xl  space-y-6">
               <div className="flex gap-4">
                 <div className="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
                   1
                 </div>
                 <div>
                   <p className="text-lg text-black/80">
-                    We pick up the blinds (or repair on-site if possible)
+                    We pick up the blinds
                   </p>
                 </div>
               </div>
