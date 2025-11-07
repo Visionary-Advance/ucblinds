@@ -5,6 +5,7 @@ export default function BookingForm() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [hasError, setHasError] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     // Step 1: Contact Information
     firstName: "",
@@ -52,6 +53,14 @@ export default function BookingForm() {
   };
 
   const handleSubmit = async () => {
+    // Prevent double submission
+    if (isSubmitting) {
+      console.log('Already submitting, ignoring duplicate request');
+      return;
+    }
+
+    setIsSubmitting(true);
+
     try {
       // Submit to Jobber API via our backend
       const response = await fetch('/api/create-jobber-request', {
@@ -68,6 +77,7 @@ export default function BookingForm() {
         // Success - show success message
         setIsSubmitted(true);
         setHasError(false);
+        setIsSubmitting(false);
 
         // Reset after 4 seconds
         setTimeout(() => {
@@ -90,6 +100,7 @@ export default function BookingForm() {
         console.error('Jobber API error:', result.error);
         setHasError(true);
         setIsSubmitted(false);
+        setIsSubmitting(false);
 
         // Hide error after 4 seconds but stay on confirmation page
         setTimeout(() => {
@@ -100,6 +111,7 @@ export default function BookingForm() {
       console.error("Submission error:", error);
       setHasError(true);
       setIsSubmitted(false);
+      setIsSubmitting(false);
 
       setTimeout(() => {
         setHasError(false);
@@ -534,9 +546,10 @@ export default function BookingForm() {
                   <button
                     type="button"
                     onClick={handleSubmit}
-                    className="bg-brand-blue text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
+                    disabled={isSubmitting}
+                    className="bg-brand-blue text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Submit
+                    {isSubmitting ? 'Submitting...' : 'Submit'}
                   </button>
                 </div>
               </div>

@@ -47,6 +47,57 @@ async function refreshJobberToken(refreshToken, accountId) {
   return data.access_token;
 }
 
+// Function to search for an existing client by email
+async function findClientByEmail(accessToken, email) {
+  // Normalize email for consistent searching
+  const normalizedEmail = email.toLowerCase().trim();
+
+  const query = `
+    query SearchClients($email: String!) {
+      clients(searchTerm: $email) {
+        nodes {
+          id
+          firstName
+          lastName
+          emails {
+            address
+          }
+        }
+      }
+    }
+  `;
+
+  const variables = {
+    email: normalizedEmail
+  };
+
+  const response = await fetch('https://api.getjobber.com/api/graphql', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+      'Content-Type': 'application/json',
+      'X-JOBBER-GRAPHQL-VERSION': '2025-01-20',
+    },
+    body: JSON.stringify({
+      query: query,
+      variables: variables,
+    }),
+  });
+
+  const result = await response.json();
+  console.log('Client Search Response:', JSON.stringify(result, null, 2));
+
+  if (result.data && result.data.clients && result.data.clients.nodes.length > 0) {
+    // Find exact email match
+    const exactMatch = result.data.clients.nodes.find(client =>
+      client.emails.some(e => e.address.toLowerCase() === normalizedEmail)
+    );
+    return exactMatch ? exactMatch.id : null;
+  }
+
+  return null;
+}
+
 // Function to create or find a client in Jobber
 async function createJobberClient(accessToken, formData) {
   const mutation = `
@@ -143,23 +194,98 @@ async function createJobberRequest(accessToken, clientId, formData) {
     }
   `;
 
-  // Build the title with name, company, and key service details
-  const titleParts = [
-    formData.company
-      ? `${formData.firstName} ${formData.lastName} - ${formData.company}`
-      : `${formData.firstName} ${formData.lastName}`,
-    `| ${formData.serviceType.join(', ')}`,
-    `| ${formData.blindTypes.join(', ')}`,
-    `| Urgency: ${formData.urgency}`,
-    `| Prefers: ${formData.contactMethod.charAt(0).toUpperCase() + formData.contactMethod.slice(1)}`
-  ];
+  // Title is just the person's name
+  const title = `${formData.firstName} ${formData.lastName}`;
 
-  const title = titleParts.join(' ');
+  // Build form sections with all service details
+  const formSections = [];
+
+  // Section 1: Service Information
+  const serviceItems = [];
+
+  if (formData.serviceType.length > 0) {
+    serviceItems.push({
+      label: "Services Requested",
+      answerText: formData.serviceType.join(', ')
+    });
+  }
+
+  if (formData.blindTypes.length > 0) {
+    serviceItems.push({
+      label: "Blind Types",
+      answerText: formData.blindTypes.join(', ')
+    });
+  }
+
+  if (formData.urgency) {
+    serviceItems.push({
+      label: "Urgency",
+      answerText: formData.urgency
+    });
+  }
+
+  if (serviceItems.length > 0) {
+    formSections.push({
+      label: "Service Information",
+      items: serviceItems
+    });
+  }
+
+  // Section 2: Contact Preferences
+  const contactItems = [];
+
+  if (formData.contactMethod) {
+    contactItems.push({
+      label: "Preferred Contact Method",
+      answerText: formData.contactMethod.toUpperCase()
+    });
+  }
+
+  if (contactItems.length > 0) {
+    formSections.push({
+      label: "Contact Preferences",
+      items: contactItems
+    });
+  }
+
+  // Section 3: Additional Information
+  const additionalItems = [];
+
+  if (formData.company) {
+    additionalItems.push({
+      label: "Company",
+      answerText: formData.company
+    });
+  }
+
+  additionalItems.push({
+    label: "Source",
+    answerText: "Website Booking Form"
+  });
+
+  additionalItems.push({
+    label: "Submitted",
+    answerText: new Date().toLocaleString('en-US', {
+      timeZone: 'America/Los_Angeles',
+      dateStyle: 'full',
+      timeStyle: 'short'
+    })
+  });
+
+  formSections.push({
+    label: "Additional Information",
+    items: additionalItems
+  });
 
   const variables = {
     input: {
       clientId: clientId,
       title: title,
+      requestDetails: {
+        form: {
+          sections: formSections
+        }
+      }
     },
   };
 
@@ -204,17 +330,53 @@ async function createJobberRequest(accessToken, clientId, formData) {
   return result.data.requestCreate.request;
 }
 
+// Helper function to properly capitalize names with hyphens and apostrophes
+function capitalizeName(name) {
+  if (!name) return name;
+
+  name = name.trim();
+
+  // Handle names with hyphens and apostrophes
+  return name
+    .split(/(['-])/) // Split by hyphen or apostrophe, keeping the delimiter
+    .map((part, index, array) => {
+      // If this is a delimiter (hyphen or apostrophe), keep it as-is
+      if (part === '-' || part === "'") {
+        return part;
+      }
+      // Capitalize first letter, lowercase the rest
+      if (part.length > 0) {
+        return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
+      }
+      return part;
+    })
+    .join('');
+}
+
 export async function POST(request) {
   try {
     const formData = await request.json();
 
-    // Fetch Jobber credentials from Supabase
+    // Normalize data: lowercase email, capitalize names
+    if (formData.email) {
+      formData.email = formData.email.toLowerCase().trim();
+    }
+    if (formData.firstName) {
+      formData.firstName = capitalizeName(formData.firstName);
+    }
+    if (formData.lastName) {
+      formData.lastName = capitalizeName(formData.lastName);
+    }
+
+    // Fetch Jobber credentials from Supabase for the specific account
     const { data: credentials, error: fetchError } = await supabase
       .from('jobber_accounts')
       .select('access_token, refresh_token, account_id')
+      .eq('account_id', process.env.JOBBER_ACCOUNT_ID)
       .single();
 
     if (fetchError || !credentials) {
+      console.error('Failed to fetch Jobber credentials:', fetchError);
       return NextResponse.json(
         { error: 'Failed to fetch Jobber credentials' },
         { status: 500 }
@@ -224,9 +386,16 @@ export async function POST(request) {
     let accessToken = credentials.access_token;
 
     try {
-      // Step 1: Create the client
-      const clientId = await createJobberClient(accessToken, formData);
-      console.log('Created client with ID:', clientId);
+      // Step 1: Check if client already exists
+      let clientId = await findClientByEmail(accessToken, formData.email);
+
+      if (clientId) {
+        console.log('Found existing client with ID:', clientId);
+      } else {
+        // Client doesn't exist, create new one
+        clientId = await createJobberClient(accessToken, formData);
+        console.log('Created new client with ID:', clientId);
+      }
 
       // Step 2: Create the request with the clientId
       const jobberRequest = await createJobberRequest(accessToken, clientId, formData);
@@ -247,9 +416,16 @@ export async function POST(request) {
           credentials.account_id
         );
 
-        // Retry: Step 1: Create the client
-        const clientId = await createJobberClient(accessToken, formData);
-        console.log('Created client with ID:', clientId);
+        // Retry: Step 1: Check if client already exists
+        let clientId = await findClientByEmail(accessToken, formData.email);
+
+        if (clientId) {
+          console.log('Found existing client with ID:', clientId);
+        } else {
+          // Client doesn't exist, create new one
+          clientId = await createJobberClient(accessToken, formData);
+          console.log('Created new client with ID:', clientId);
+        }
 
         // Retry: Step 2: Create the request with the clientId
         const jobberRequest = await createJobberRequest(accessToken, clientId, formData);
