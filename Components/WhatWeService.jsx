@@ -74,10 +74,26 @@ export default function WhatWeService() {
     <section className="py-16 px-4 bg-gray-50 relative overflow-">
       {/* Dotted Background Pattern */}
       <div
-        className="absolute inset-0 opacity-80 pointer-events-none"
+        className="absolute inset-0 opacity-40 pointer-events-none"
         style={{
           backgroundImage: 'radial-gradient(circle, rgba(53, 124, 206, 0.15) 3px, transparent 3px)',
           backgroundSize: '24px 24px'
+        }}
+      ></div>
+
+      {/* Top Fade */}
+      <div
+        className="absolute top-0 left-0 right-0 h-[550px] pointer-events-none z-[5]"
+        style={{
+          background: 'linear-gradient(to bottom, rgb(249, 250, 251) 0%, transparent 100%)'
+        }}
+      ></div>
+
+      {/* Bottom Fade */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-[5]"
+        style={{
+          background: 'linear-gradient(to top, rgb(249, 250, 251) 0%, transparent 100%)'
         }}
       ></div>
 
