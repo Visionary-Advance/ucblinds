@@ -29,8 +29,7 @@ export default function LandingPage() {
               {/* Left Content */}
               <div className="space-y-6 lg:space-y-8 lg:w-10/12">
                 <h2 className="font-montserrat tracking-[-1px] font-bold text-white text-[40px] lg:text-[4rem] leading-tight">
-                 Premium Window Coverings &amp; Ultrasonic Blind Cleaning in Lane
-County and Beyond
+                 Premium Window Coverings &amp; Ultrasonic Blind Cleaning 
                 </h2>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
                  Residential Blind Cleaning, Blind Repair & Blind Replacement
