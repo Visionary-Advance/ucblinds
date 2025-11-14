@@ -13,8 +13,8 @@ export default function BlindsVid() {
   return (
     <section className="bg-gray-50 py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center font-bold text-4xl md:text-5xl text-black mb-12">
-          <h3>Getting Started with your blinds</h3>
+        <div className="text-center tracking-[-1px] font-bold text-4xl md:text-5xl text-black mb-12">
+          <h3>Getting Started with your Blinds</h3>
         </div>
 
         <div className="relative w-full max-w-5xl mx-auto aspect-video bg-black rounded-2xl overflow-hidden shadow-lg">

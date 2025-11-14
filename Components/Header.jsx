@@ -15,10 +15,10 @@ export default function Header() {
 
   // Dynamic classes based on page
   const containerClass = isHomePage ? "absolute" : "relative";
-  const logoTextColor = isHomePage ? "text-white" : "text-brand-blue";
-  const navTextColor = isHomePage ? "text-white" : "text-brand-blue";
+  const logoTextColor = isHomePage ? "text-white" : "text-black";
+  const navTextColor = isHomePage ? "text-white" : "text-black";
   const navBgColor = isHomePage ? "" : "bg-white shadow-md";
-  const menuIconColor = isHomePage ? "text-white" : "text-brand-blue";
+  const menuIconColor = isHomePage ? "text-white" : "text-black";
 
   return (
     <>
@@ -56,7 +56,7 @@ export default function Header() {
                 />
               </div>
               <div className="flex flex-col">
-                <h1 className={`font-montserrat font-bold ${logoTextColor} text-[24px] md:text-[32px]`}>UCBlinds</h1>
+                <h1 className={`font-montserrat font-bold ${logoTextColor} text-[24px] md:text-[32px]`}>UC Blinds</h1>
                 <div className={`flex items-center gap-1.5 md:gap-2 ${logoTextColor} text-[10px] md:text-[12px] font-inter tracking-wide`}>
                   <span>Clean</span>
                   <Circle className="w-1 h-1 fill-current" />
@@ -129,9 +129,11 @@ export default function Header() {
             </button>
 
             {/* Desktop Book Now Button - Hidden on mobile */}
-            <button className="ml-auto hidden lg:block bg-brand-blue text-white font-montserrat font-bold text-[18px] px-5 py-2 cursor-pointer rounded-[5px] hover:brightness-90 transition duration-150">
+            <Link href="/contact" className="ml-auto  hidden lg:block" aria-label="Book Now Button">
+            <button className="bg-brand-blue text-white font-montserrat font-bold text-[18px] px-5 py-2 cursor-pointer rounded-[5px] hover:brightness-90 transition duration-150">
               Book Now
             </button>
+            </Link>
           </div>
         </div>
       </div>
