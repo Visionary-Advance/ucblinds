@@ -373,7 +373,7 @@ export default function BookingForm() {
                       What service do you need? (Select all that apply)
                     </label>
                     <div className="grid grid-cols-2 gap-3">
-                      {['Cleaning', 'Repair', 'Installation', 'Consultation'].map((service) => (
+                      {['Cleaning', 'Repair', 'Sales', 'Consultation'].map((service) => (
                         <button
                           key={service}
                           type="button"

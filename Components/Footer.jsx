@@ -25,9 +25,9 @@ export default function Footer() {
               <div className="flex items-center gap-2 text-black/80 text-[12px] font-inter tracking-wide mt-1">
                 <span>Clean</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>repair</span>
+                <span>Repair</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>replace</span>
+                <span>Replace</span>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function Footer() {
             <div className="relative w-[55px] h-[55px] flex-shrink-0">
               <Image
                 src="/Img/UC_Logo.png"
-                alt="UCBlinds Logo"
+                alt="UC Blinds Logo"
                 fill
                 className=""
               />
@@ -120,11 +120,11 @@ export default function Footer() {
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-black">UC Blinds</h2>
               <div className="flex items-center gap-1.5 text-black/80 text-[11px] font-inter tracking-wide mt-0.5">
-                <span>clean</span>
+                <span>Clean</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>repair</span>
+                <span>Repair</span>
                 <Circle className="w-1 h-1 fill-current" />
-                <span>replace</span>
+                <span>Replace</span>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ export default function PDFHome() {
             <div className="grid grid-cols-2 items-center">
               {/* Left Content */}
               <div className="p-16 pr-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+                <h2 className="text-4xl tracking-[1px] md:text-5xl font-bold text-white mb-8">
                   Get your FREE PDF to start measuring your blinds today!
                 </h2>
                 <p className="text-xl  text-white/90 leading-relaxed">

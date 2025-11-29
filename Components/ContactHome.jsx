@@ -8,22 +8,41 @@ import ParallaxBackground from './ParallaxBackground';
 export default function ContactHome() {
   const [openFaqIndex, setOpenFaqIndex] = useState(2); // Third item open by default
 
-  const faqs = [
-    {
-      id: 1,
-      question: 'How do I measure my blinds?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem',
-    },
-    {
-      id: 2,
-      question: 'How do I measure my blinds?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem',
-    },
-    {
-      id: 3,
-      question: 'How do I measure my blinds?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem',
-    },
+    const faqs = [
+        {
+            id: 1,
+            question: 'What types of blinds do you clean and repair?',
+            answer: {
+                intro: 'We service all types of window treatments including:',
+                list: [
+                    'Vertical blinds',
+                    'Horizontal blinds',
+                    'Roller shades',
+                    'Roman shades',
+                    'Cellular shades',
+                    'Wood blinds'
+                ],
+                outro: 'Our team is equipped to handle any brand or style.'
+            }
+        },
+        {
+            id: 2,
+            question: 'Do you offer free consultations?',
+            answer: {
+                intro: 'Yes. We offer free in-home consultations throughout Lane County, Springfield, Eugene, Roseburg, Bend, Florence, Woodburn, and nearby areas.\n\nDuring your consultation, we\'ll:',
+                list: [
+                    'Take precise measurements',
+                    'Show you samples and design options',
+                    'Provide a clear, no-obligation quote'
+                ],
+                outro: 'You can call 541-343-8000 or text 541-256-2622 to schedule your appointment.'
+            }
+        },
+        {
+            id: 3,
+            question: 'What makes UC Blinds different from other companies?',
+            answer: "Our difference lies in our complete service lifecycle. We don’t just sell and install blinds — we care for them for life. When you purchase from us, you’ll receive discounted ultrasonic cleaning for as long as you own your blinds or shades. We also specialize in cellular shade cleaning, a service most competitors can’t safely provide.",
+        },
   ];
 
   const toggleFaq = (index) => {
@@ -59,7 +78,7 @@ export default function ContactHome() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Left Column - Title and FAQs */}
               <div className="order-1 min-h-0">
-                <h2 className="text-4xl lg:text-6xl font-bold text-white mb-2">
+                <h2 className="text-4xl tracking-[-1px] lg:text-6xl font-bold text-white mb-2">
                   Contact Us Today
                 </h2>
                 <div className="w-16 h-1 mb-8">
@@ -102,9 +121,23 @@ Ready for a free quote, design consultation, or professional cleaning service? W
                         }`}
                       >
                         <div className="px-6 pb-6">
-                          <p className="text-faq-answer text-black leading-relaxed">
-                            {faq.answer}
-                          </p>
+                          {typeof faq.answer === 'string' ? (
+                            <p className="text-faq-answer text-black leading-relaxed whitespace-pre-line">
+                              {faq.answer}
+                            </p>
+                          ) : (
+                            <div className="text-faq-answer text-black leading-relaxed space-y-3">
+                              <p className="whitespace-pre-line">{faq.answer.intro}</p>
+                              {faq.answer.list && (
+                                <ul className="list-disc pl-6 space-y-1">
+                                  {faq.answer.list.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                  ))}
+                                </ul>
+                              )}
+                              {faq.answer.outro && <p>{faq.answer.outro}</p>}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>

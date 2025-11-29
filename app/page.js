@@ -9,6 +9,7 @@ import PDFHome from "@/Components/PDFHome";
 import ContactHome from "@/Components/ContactHome";
 import ParallaxBackground from "@/Components/ParallaxBackground";
 import ScrollToTop from "@/Components/ScrollToTop";
+import WhatWeService from "@/Components/WhatWeService";
 
 export default function LandingPage() {
   return (
@@ -27,9 +28,8 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
               <div className="space-y-6 lg:space-y-8 lg:w-10/12">
-                <h2 className="font-montserrat font-bold text-white text-[40px] lg:text-[4rem] leading-tight">
-                 Premium Window Coverings &amp; Ultrasonic Blind Cleaning in Lane
-County and Beyond
+                <h2 className="font-montserrat tracking-[-1px] font-bold text-white text-[40px] lg:text-[4rem] leading-tight">
+                 Premium Window Coverings &amp; Ultrasonic Blind Cleaning 
                 </h2>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
                  Residential Blind Cleaning, Blind Repair & Blind Replacement
@@ -56,6 +56,10 @@ Call, Text or Fill out our form to Get a Free Home Estimate
 
       {/* About Section */}
       <AboutHome />
+
+      {/* What We Service Section */}
+      <WhatWeService />
+
       <TestimonialsHome />
 
       {/* Services Section */}
@@ -64,10 +68,10 @@ Call, Text or Fill out our form to Get a Free Home Estimate
       {/* Testimonials Section */}
 
       {/* Video Section */}
-      <BlindsVid />
+      {/* <BlindsVid /> */}
 
       {/* PDF Download Section */}
-      <PDFHome />
+      {/* <PDFHome /> */}
 
       {/* Contact Section */}
       <ContactHome />
