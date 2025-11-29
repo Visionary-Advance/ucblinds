@@ -9,42 +9,44 @@ export default function Footer() {
     <footer className="w-full bg-gray-50 py-8 px-4 md:px-8 lg:px-16">
       <div className=" mx-auto">
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-5 justify-center mb-8">
-          {/* Logo and Brand */}
-          <div className="flex items-start gap-4">
-            <div className="relative w-[90px] h-[90px] flex-shrink-0">
-              <Image
-                src="/Img/UC_Logo.png"
-                alt="UCBlinds Logo"
-                fill
-                className=""
-              />
-            </div>
-            <div className="flex flex-col mt-2">
-              <h2 className="text-3xl font-montserrat font-bold text-black">UC Blinds</h2>
-              <div className="flex items-center gap-2 text-black/80 text-[12px] font-inter tracking-wide mt-1">
-                <span>Clean</span>
-                <Circle className="w-1 h-1 fill-current" />
-                <span>Repair</span>
-                <Circle className="w-1 h-1 fill-current" />
-                <span>Replace</span>
+        <div className="hidden lg:grid lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16 mb-8">
+          {/* Logo, Brand, and Social Media */}
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="relative w-[90px] h-[90px] flex-shrink-0">
+                <Image
+                  src="/Img/UC_Logo.png"
+                  alt="UCBlinds Logo"
+                  fill
+                  className=""
+                />
+              </div>
+              <div className="flex flex-col mt-2">
+                <h2 className="text-3xl font-montserrat font-bold text-black">UC Blinds</h2>
+                <div className="flex items-center gap-2 text-black/80 text-[12px] font-inter tracking-wide mt-1">
+                  <span>Clean</span>
+                  <Circle className="w-1 h-1 fill-current" />
+                  <span>Repair</span>
+                  <Circle className="w-1 h-1 fill-current" />
+                  <span>Replace</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Social Media */}
-          <div>
-            <h3 className="text-xl font-bold text-black mb-4">Find Us on Social Media</h3>
-            <div className="flex gap-4">
-              <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                <Instagram className="w-6 h-6" />
-              </Link>
-              <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                <Facebook className="w-6 h-6" />
-              </Link>
-              <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </Link>
+            {/* Social Media */}
+            <div className="pl-[25px]">
+              <h3 className="text-xl font-bold text-black mb-4">Find Us on Social Media</h3>
+              <div className="flex gap-4">
+                <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
+                  <Instagram className="w-6 h-6" />
+                </Link>
+                <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
+                  <Facebook className="w-6 h-6" />
+                </Link>
+                <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
+                  <Linkedin className="w-6 h-6" />
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -106,7 +108,8 @@ export default function Footer() {
 
         {/* Mobile Layout */}
         <div className="lg:hidden space-y-8 mb-8">
-              <div className="w-full h-px bg-gray-300"></div>
+          <div className="w-full h-px bg-gray-300"></div>
+
           {/* Logo and Brand */}
           <div className="flex items-center gap-4">
             <div className="relative w-[55px] h-[55px] flex-shrink-0">
@@ -128,7 +131,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
 
           {/* Social Media */}
           <div>

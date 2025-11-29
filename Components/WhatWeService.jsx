@@ -16,49 +16,49 @@ const blindTypes = [
     name: 'Vertical',
     icon: MoveVertical,
     description: 'Perfect for sliding doors and large windows',
-    image: '/Img/vertical-blinds.jpg'
+    image: '/Img/Vertical_Blinds_Img.jpg'
   },
   {
     name: 'Horizontal',
     icon: MoveHorizontal,
     description: 'Classic style for any window size',
-    image: '/Img/horizontal-blinds.jpg'
+    image: '/Img/Horizontal_Blinds_Img.jpg'
   },
   {
     name: 'Roller',
     icon: CircleDot,
     description: 'Sleek and modern window covering',
-    image: '/Img/roller-blinds.jpg'
+    image: '/Img/Roller_Blinds_Img.webp'
   },
   {
     name: 'Cellular',
     icon: Boxes,
     description: 'Energy-efficient honeycomb design',
-    image: '/Img/cellular-blinds.jpg'
+    image: '/Img/Cellular_Blinds_Img.jpg'
   },
   {
     name: 'Wood',
     icon: Grid3x3,
     description: 'Natural wood for elegant spaces',
-    image: '/Img/wood-blinds.jpg'
+    image: '/Img/Wood_Blinds_Img.jpg'
   },
   {
     name: 'Faux Wood',
     icon: Box,
     description: 'Durable wood-look alternative',
-    image: '/Img/faux-wood-blinds.jpg'
+    image: '/Img/Faux_Blinds_Img.webp'
   },
   {
     name: 'Roman Shades',
     icon: Wind,
     description: 'Elegant fabric window treatments',
-    image: '/Img/roman-shades.jpg'
+    image: '/Img/Roman_Blinds_Img.jpg'
   },
   {
     name: 'Panel Track',
     icon: PanelTop,
     description: 'Modern sliding panel system',
-    image: '/Img/panel-track.jpg'
+    image: '/Img/Panel_Track_Img.webp'
   }
 ];
 

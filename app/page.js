@@ -13,7 +13,7 @@ import WhatWeService from "@/Components/WhatWeService";
 
 export default function LandingPage() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen">
 
       {/* Hero Section with Parallax Background */}
       <ParallaxBackground
@@ -24,7 +24,7 @@ export default function LandingPage() {
         className="w-full mt-[50px] pb-10 lg:pb-0 min-h-[900px] lg:min-h-[991px]"
       >
         <div className="justify-center lg:pt-[200px] pt-[120px] px-4 lg:px-8 pb-16 lg:pb-0">
-          <div className="max-w-[1500px] mx-auto">
+          <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
               <div className="space-y-6 lg:space-y-8 lg:w-10/12">
