@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </div>
             <div className="flex flex-col mt-2">
-              <h2 className="text-3xl font-montserrat font-bold text-black">UCBlinds</h2>
+              <h2 className="text-3xl font-montserrat font-bold text-black">UC Blinds</h2>
               <div className="flex items-center gap-2 text-black/80 text-[12px] font-inter tracking-wide mt-1">
                 <span>Clean</span>
                 <Circle className="w-1 h-1 fill-current" />
@@ -118,7 +118,7 @@ export default function Footer() {
               />
             </div>
             <div className="flex flex-col">
-              <h2 className="text-3xl font-bold text-black">UCBlinds</h2>
+              <h2 className="text-3xl font-bold text-black">UC Blinds</h2>
               <div className="flex items-center gap-1.5 text-black/80 text-[11px] font-inter tracking-wide mt-0.5">
                 <span>clean</span>
                 <Circle className="w-1 h-1 fill-current" />
