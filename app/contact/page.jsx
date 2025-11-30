@@ -103,8 +103,8 @@ to hear from you.</p>
                 <div className="col-span-1 lg:translate-x-10 mx-auto lg:w-5/12 w-11/12 z-40 mb-10">
                     <BookingForm />
                 </div>
-                <div className="col-span-1 w-11/12 mx-auto lg:w-full relative my-auto">
-                    <Image src={'/Img/window-blinds-repair.png'} width={900} height={900} alt="Window Blinds" className="rounded-3xl lg:-translate-x-72" />
+                <div className="col-span-1 w-10/12 mx-auto lg:w-full relative my-auto">
+                    <Image src={'/Img/Contact_Img.png'} width={800} height={800} alt="Window Blinds" className="rounded-3xl lg:-translate-x-72" />
                 </div>
             </div>
 

@@ -9,7 +9,7 @@ export default function AboutHome() {
         <div className="lg:hidden space-y-8">
           <div className="relative w-full h-[400px] rounded-[20px] overflow-hidden shadow-xl">
             <Image
-              src="/Img/workers-cleaning-blinds.png"
+              src="/Img/About_Home_Img.jpg"
               alt="UC Blinds professional team cleaning and installing window blinds"
               fill
               className="object-cover"
@@ -53,7 +53,7 @@ better, last longer, and cost less over time. </p>
               <ul className='list-disc list-outside ml-5 space-y-4 lg:space-y-8 text-black/80 text-lg lg:text-xl'>
                 <li><span className='font-bold text-black text-xl'>Full-Service Experts –</span> From new window coverings to cleaning, repair, and
 installation, we handle every stage with precision and care.</li>
-                <li><span className='font-bold text-black text-xl'>Lifetime Cleaning Discount –</span> Buy your blinds or shades from UC Blinds and
+                <li><span className='font-bold text-black text-xl'><a className='' href='/limited-lifetime-cleaning-terms'> Limited Lifetime Warranty</a> –</span> Buy your blinds or shades from UC Blinds and
 enjoy discounted professional cleaning for life.</li>
                 <li><span className='font-bold text-black text-xl'>Ultrasonic Cleaning Technology –</span> Our state-of-the-art system cleans deeper
 and more gently than any traditional method.</li>
@@ -87,7 +87,7 @@ County and surrounding regions.</li>
             >
               <div className="relative w-[500px] h-[500px] rounded-[20px] overflow-hidden shadow-xl">
                 <Image
-                  src="/Img/workers-cleaning-blinds.png"
+                  src="/Img/About_Home_Img.jpg"
                   alt="UC Blinds professional team cleaning and installing window blinds"
                   fill
                   className="object-cover"
@@ -135,7 +135,7 @@ better, last longer, and cost less over time. </p>
               <ul className='list-disc list-outside ml-5 space-y-8 text-black/80 text-xl'>
                 <li><span className='font-bold text-black text-xl'>Full-Service Experts –</span> From new window coverings to cleaning, repair, and
 installation, we handle every stage with precision and care.</li>
-                <li><span className='font-bold text-black text-xl'>Lifetime Cleaning Discount –</span> Buy your blinds or shades from UC Blinds and
+                <li><span className='font-bold text-black text-xl'><a className='' href='/warranty'> Limited Lifetime Warranty </a>–</span> Buy your blinds or shades from UC Blinds and
 enjoy discounted professional cleaning for life.</li>
                 <li><span className='font-bold text-black text-xl'>Ultrasonic Cleaning Technology –</span> Our state-of-the-art system cleans deeper
 and more gently than any traditional method.</li>

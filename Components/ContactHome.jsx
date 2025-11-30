@@ -67,7 +67,7 @@ export default function ContactHome() {
   return (
     <>
       <ParallaxBackground
-        imageSrc="/Img/contact-bg.png"
+        imageSrc="/Img/main_photo.webp"
         alt="Contact background"
         speed={0.1}
         overlayClass="bg-black/30 lg:bg-black/50"

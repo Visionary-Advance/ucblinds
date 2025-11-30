@@ -21,7 +21,7 @@ export default function LandingPage() {
         alt="Window blinds background"
         speed={0.2}
         overlayClass="bg-black/30"
-        className="w-full mt-[50px] pb-10 lg:pb-0 min-h-[900px] lg:min-h-[991px]"
+        className="w-full -translate-y-2 mt-[45px] pb-10 lg:pb-0 min-h-[900px] lg:min-h-[991px]"
       >
         <div className="justify-center lg:pt-[200px] pt-[120px] px-4 lg:px-8 pb-16 lg:pb-0">
           <div className="max-w-[1400px] mx-auto">
@@ -33,8 +33,8 @@ export default function LandingPage() {
                 </h2>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
                  Residential Blind Cleaning, Blind Repair & Blind Replacement
-Convenient pickup service and fast turnaround — often same day within Lane County.
-Call, Text or Fill out our form to Get a Free Home Estimate
+Convenient pickup service and fast turnaround.
+Call, Text or Fill out our form to get a free home estimate
 
                 </p>
               </div>

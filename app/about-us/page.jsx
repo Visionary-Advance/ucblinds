@@ -51,7 +51,7 @@ energy efficiency, and design — backed by exceptional customer care.          
             <div className="hidden lg:block">
               <div className="absolute top-5 right-0 lg:translate-x-32 xl:translate-x-48 2xl:translate-x-56 lg:w-[350px] lg:h-[240px] xl:w-[400px] xl:h-[275px] 2xl:w-[439px] 2xl:h-[300px] rounded-[20px] overflow-hidden flex-shrink-0">
                 <Image
-                  src="/Img/mission-team.png"
+                  src="/Img/Mission_Img.jpg"
                   alt="Professional team collaboration"
                   fill
                   className="object-cover"
@@ -116,9 +116,9 @@ energy efficiency, and design — backed by exceptional customer care.          
 
             {/* Desktop: Image on Right */}
             <div className="hidden lg:block flex-shrink-0">
-              <div className="relative w-[550px] h-[350px] rounded-[20px] overflow-hidden">
+              <div className="relative w-[550px] h-[550px] rounded-[20px] overflow-hidden">
                 <Image
-                  src="/Img/approach-handshake.png"
+                  src="/Img/Values_Img.webp"
                   alt="Professional partnership handshake"
                   fill
                   className="object-cover"
@@ -130,7 +130,7 @@ energy efficiency, and design — backed by exceptional customer care.          
             <div className="lg:hidden w-full">
               <div className="relative w-full max-w-[397px] mx-auto aspect-[397/253] rounded-[20px] overflow-hidden">
                 <Image
-                  src="/Img/approach-handshake.png"
+                  src="/Img/Values_Img.webp"
                   alt="Professional partnership handshake"
                   fill
                   className="object-cover"
@@ -166,7 +166,7 @@ energy efficiency, and design — backed by exceptional customer care.          
             <p className="font-[family-name:var(--font-roboto)] text-[22px] text-[#5d5d5d] mb-4 lg:mb-6">
               Owner
             </p>
-            <div className="font-[family-name:var(--font-roboto)] text-base sm:text-lg lg:text-xl text-black leading-relaxed space-y-4 lg:max-w-[798px]">
+            <div className="font-[family-name:var(--font-roboto)] text-base text-lg text-black leading-relaxed space-y-4 lg:max-w-[798px]">
               <p>
                 Thank you for looking at this page. My name is Brett, and I am the owner of UCBlinds. I started UCBlinds in 2018, with a long history in the window covering business. Growing up in the window covering business has taught me a lot over many years. The experiences and lessons that I have learned have enabled me to make sure every Property Owner, Property manager, Family, Tenant, and homeowner does not spend one night without window coverings and is treated fairly, no matter what in a timely manner.
               </p>

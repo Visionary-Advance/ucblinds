@@ -35,27 +35,29 @@ export default function ServicesPage() {
           />
         </div>
 
-        {/* Hover/Tap State - Slides up from bottom */}
-        <div className={`absolute inset-x-0 bottom-0 bg-black/65  p-5 flex flex-col justify-between transition-transform duration-300 ease-in-out h-full
-          ${isExpanded ? 'translate-y-0' : `translate-y-[calc(100%-${initialOffset})]`}
-          lg:translate-y-[calc(100%-${initialOffset})] lg:group-hover:translate-y-0
+        {/* Sliding overlay */}
+        <div className={`absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-5 pb-6 transition-all duration-500 ease-out
+          ${isExpanded ? 'h-full' : 'h-[90px]'}
+          lg:h-[90px] lg:group-hover:h-full
         `}>
-          <div>
+          <div className="h-full flex flex-col justify-end">
+            {/* Title - always visible */}
             <h3 className="text-2xl text-white font-normal mb-4 leading-tight">{service.title}</h3>
-            <p className={`text-base text-white transition-opacity duration-300 delay-100 leading-relaxed
-              ${isExpanded ? 'opacity-100' : 'opacity-0'}
-              lg:opacity-0 lg:group-hover:opacity-100
-            `}>{service.shortDescription}</p>
+
+            {/* Description and button - slide in */}
+            <div className={`transition-all duration-750 ease-out overflow-hidden
+              ${isExpanded ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}
+              lg:max-h-0 lg:opacity-0 lg:group-hover:max-h-[300px] lg:group-hover:opacity-100
+            `}>
+              <p className="text-base text-white leading-relaxed mb-4">{service.shortDescription}</p>
+              <Link
+                href={`/services/${service.slug}`}
+                className="bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-sm px-6 py-3 rounded-[5px] transition-colors duration-200 inline-block"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
-          <Link
-            href={`/services/${service.slug}`}
-            className={`bg-[#357cce] hover:bg-[#2d6bb8] text-white font-bold text-sm px-6 py-3 rounded-[5px] transition-colors duration-200 w-fit
-              ${isExpanded ? 'opacity-100' : 'opacity-0'}
-              lg:opacity-0 lg:group-hover:opacity-100
-            `}
-          >
-            Learn More
-          </Link>
         </div>
       </div>
     );
@@ -70,7 +72,7 @@ export default function ServicesPage() {
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-black mb-1">Our Services</h1>
             <div className="w-16 h-1 bg-black mb-6"></div>
-            <p className="text-xl md:text-2xl text-black/80 max-w-3xl">
+            <p className="text-lg text-black/80 max-w-3xl">
               Whether your blinds need deep cleaning, expert repair, or full replacement, our team makes the process easy and stress-free with fast turnaround and professional service.
             </p>
           </div>

@@ -91,22 +91,24 @@ export default function Header() {
 
                 {/* Dropdown Menu */}
                 <div
-                  className={`absolute top-full left-0 mt-2 w-[280px] bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${
+                  className={`absolute top-full left-0 pt-2 w-[280px] transition-all duration-300 ${
                     isServicesDropdownOpen
                       ? 'opacity-100 translate-y-0 pointer-events-auto'
                       : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
                 >
-                  <div className="py-2">
-                    {services.map((service) => (
-                      <Link
-                        key={service.id}
-                        href={`/services/${service.slug}`}
-                        className="block px-4 py-3 text-gray-800 hover:bg-brand-blue/10 hover:text-brand-blue transition-colors font-inter text-[16px]"
-                      >
-                        {service.title}
-                      </Link>
-                    ))}
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="py-2">
+                      {services.map((service) => (
+                        <Link
+                          key={service.id}
+                          href={`/services/${service.slug}`}
+                          className="block px-4 py-3 text-gray-800 hover:bg-brand-blue/10 hover:text-brand-blue transition-colors font-inter text-[16px]"
+                        >
+                          {service.title}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -138,42 +140,55 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Slideout Menu */}
+      {/* Modern Full-Screen Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black/50 z-[100] transition-opacity duration-300 lg:hidden ${
-          isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        className={`fixed inset-0 z-[100] lg:hidden transition-all duration-500 ${
+          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
-        onClick={() => {
-          setIsMobileMenuOpen(false);
-          setIsMobileServicesOpen(false);
-        }}
       >
+        {/* Gradient Background */}
         <div
-          className={`fixed top-0 right-0 h-full w-[280px] bg-white shadow-2xl transition-transform duration-300 ${
-            isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          className={`absolute inset-0 bg-gradient-to-br from-[#357cce] via-[#2d6bb8] to-[#9fd7e9] transition-opacity duration-500 ${
+            isMobileMenuOpen ? 'opacity-100' : 'opacity-0'
           }`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          {/* Menu Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="font-montserrat font-bold text-brand-blue text-[24px]">Menu</h2>
+          onClick={() => {
+            setIsMobileMenuOpen(false);
+            setIsMobileServicesOpen(false);
+          }}
+        />
+
+        {/* Menu Content */}
+        <div className="relative h-full flex flex-col">
+          {/* Header with Close Button */}
+          <div className="flex items-center justify-between p-6 pt-8">
+            <div className={`transition-all duration-500 delay-100 ${
+              isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+            }`}>
+             
+            </div>
             <button
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 setIsMobileServicesOpen(false);
               }}
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className={`text-white hover:bg-white/20 p-2 rounded-full transition-all duration-500 delay-150 ${
+                isMobileMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 rotate-90'
+              }`}
               aria-label="Close menu"
             >
-              <X className="w-6 h-6" />
+              <X className="w-8 h-8" />
             </button>
           </div>
 
-          {/* Menu Links */}
-          <nav className="flex flex-col p-6 space-y-4">
+          {/* Navigation Links */}
+          <nav className="flex-1 flex flex-col justify-center px-8 space-y-1">
+            {/* Home Link */}
             <Link
               href="/"
-              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
+              className={`text-white font-montserrat text-[32px] font-bold py-4 hover:translate-x-2 transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+              }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '200ms' : '0ms' }}
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 setIsMobileServicesOpen(false);
@@ -182,30 +197,39 @@ export default function Header() {
               Home
             </Link>
 
-            {/* Services Dropdown for Mobile */}
-            <div className="space-y-2">
+            {/* Services Dropdown */}
+            <div className={`transition-all duration-300 ${
+              isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+            }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '250ms' : '0ms' }}
+            >
               <button
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                className="w-full text-left text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2 flex items-center justify-between"
+                className="w-full text-left text-white font-montserrat text-[32px] font-bold py-4 flex items-center justify-between hover:translate-x-2 transition-all duration-300"
               >
                 Services
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
+                  className={`w-7 h-7 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
                 />
               </button>
 
-              {/* Dropdown Content */}
+              {/* Services Submenu */}
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  isMobileServicesOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                  isMobileServicesOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="pl-4 space-y-2 pt-2">
-                  {services.map((service) => (
+                <div className="pl-6 space-y-3 py-2">
+                  {services.map((service, index) => (
                     <Link
                       key={service.id}
                       href={`/services/${service.slug}`}
-                      className="block text-gray-600 font-inter text-[16px] hover:text-brand-blue transition-colors py-2"
+                      className="block text-white/90 font-inter text-[18px] hover:text-white hover:translate-x-2 transition-all duration-200 py-2"
+                      style={{
+                        transitionDelay: isMobileServicesOpen ? `${index * 50}ms` : '0ms',
+                        opacity: isMobileServicesOpen ? 1 : 0,
+                        transform: isMobileServicesOpen ? 'translateX(0)' : 'translateX(-10px)'
+                      }}
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         setIsMobileServicesOpen(false);
@@ -218,9 +242,13 @@ export default function Header() {
               </div>
             </div>
 
+            {/* About Link */}
             <Link
               href="/about-us"
-              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
+              className={`text-white font-montserrat text-[32px] font-bold py-4 hover:translate-x-2 transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+              }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '300ms' : '0ms' }}
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 setIsMobileServicesOpen(false);
@@ -228,9 +256,14 @@ export default function Header() {
             >
               About
             </Link>
+
+            {/* Contact Link */}
             <Link
               href="/contact"
-              className="text-gray-800 font-inter text-[18px] hover:text-brand-blue transition-colors py-2"
+              className={`text-white font-montserrat text-[32px] font-bold py-4 hover:translate-x-2 transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+              }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '350ms' : '0ms' }}
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 setIsMobileServicesOpen(false);
@@ -240,17 +273,34 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Mobile Book Now Button */}
-          <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200">
-            <button
-              className="w-full bg-brand-blue text-white font-montserrat font-bold text-[18px] px-5 py-3 rounded-[5px] hover:brightness-90 transition duration-150"
+          {/* Bottom Action Buttons */}
+          <div className="p-8 pb-12 space-y-4">
+            {/* Book Now Button */}
+            <Link
+              href="/contact"
+              className={`block w-full bg-white text-brand-blue font-montserrat font-bold text-[20px] px-6 py-4 rounded-[10px] hover:bg-gray-100 transition-all duration-300 text-center shadow-2xl ${
+                isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '400ms' : '0ms' }}
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 setIsMobileServicesOpen(false);
               }}
             >
               Book Now
-            </button>
+            </Link>
+
+            {/* Call Button */}
+            <a
+              href="tel:541-343-8000"
+              className={`flex items-center justify-center gap-3 w-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-montserrat font-bold text-[18px] px-6 py-4 rounded-[10px] hover:bg-white/20 transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '450ms' : '0ms' }}
+            >
+              <Phone className="w-6 h-6" />
+              541-343-8000
+            </a>
           </div>
         </div>
       </div>

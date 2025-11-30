@@ -55,7 +55,7 @@ export default function ReplacementPage() {
             {/* Right side - Image */}
             <div className="relative w-full h-[400px] lg:h-[550px] rounded-[20px] overflow-hidden">
               <Image
-                src="/Img/workers-cleaning-blinds.png"
+                src="/Img/New_Blinds_Img.avif"
                 alt="UC Blinds professional team installing new window blinds"
                 fill
                 className="object-cover"

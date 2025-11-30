@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Facebook, Linkedin, Circle } from 'lucide-react';
+import { getAllCities } from '@/lib/cities';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const cities = getAllCities();
 
   return (
     <footer className="w-full bg-gray-50 py-8 px-4 md:px-8 lg:px-16">
@@ -76,19 +78,19 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold text-black mb-4">Useful Links</h3>
             <ul className="space-y-3">
-              <li>
+              {/* <li>
                 <Link href="/privacy" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Privacy Policy
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/warranty" className=" text-black/90 hover:text-[#357cce] transition-colors">
                   Warranty
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className=" text-black/90 hover:text-[#357cce] transition-colors">
-                  Terms of Use
+                <Link href="/limited-lifetime-cleaning-terms" className=" text-black/90 hover:text-[#357cce] transition-colors">
+                  Limited Lifetime Cleaning Terms
                 </Link>
               </li>
             </ul>
@@ -98,10 +100,16 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold text-black mb-4">Areas We Serve</h3>
             <ul className="space-y-3">
-              <li className=" text-black/90">Eugene</li>
-              <li className=" text-black/90">Bend</li>
-              <li className=" text-black/90">Springfield</li>
-              <li className=" text-black/90">Woodburn</li>
+              {cities.map((city) => (
+                <li key={city.id}>
+                  <Link
+                    href={`/cities/${city.slug}`}
+                    className="text-black/90 hover:text-[#357cce] transition-colors"
+                  >
+                    {city.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -196,10 +204,16 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold text-black mb-4">Areas We Serve</h3>
             <ul className="space-y-3">
-              <li className="text-lg text-black/90">Eugene</li>
-              <li className="text-lg text-black/90">Bend</li>
-              <li className="text-lg text-black/90">Springfield</li>
-              <li className="text-lg text-black/90">Woodburn</li>
+              {cities.map((city) => (
+                <li key={city.id}>
+                  <Link
+                    href={`/cities/${city.slug}`}
+                    className="text-lg text-black/90 hover:text-[#357cce] transition-colors"
+                  >
+                    {city.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
