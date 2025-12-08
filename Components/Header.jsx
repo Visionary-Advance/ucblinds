@@ -26,16 +26,20 @@ export default function Header() {
       <div className={`${containerClass} top-0 left-0 right-0 bg-brand-blue h-[50px] md:h-[50px] z-50`}>
         <div className="max-w-[1850px] mx-auto h-full flex items-center justify-center gap-2 md:gap-4 px-4 md:px-8">
           {/* Text Contact Button */}
+          <Link href={"sms:541-246-3002"}>
           <div className="flex items-center gap-2 bg-neutral-100 rounded-[5px] px-3 md:px-4 py-2 h-[36px] md:h-[40px]">
             <MessageSquareText className="w-5 h-5 md:w-6 md:h-6 text-brand-blue" />
-            <span className="text-brand-blue font-inter text-[13px] md:text-[15px]">541-343-8000</span>
+            <span className="text-brand-blue font-inter text-[13px] md:text-[15px]">541-246-3002</span>
           </div>
+          </Link>
 
           {/* Phone Contact Button */}
+          <Link href={"tel:541-343-8000"}>
           <div className="flex items-center gap-2 bg-neutral-100 rounded-[5px] px-3 md:px-4 py-2 h-[36px] md:h-[40px]">
             <Phone className="w-5 h-5 md:w-6 md:h-6 text-brand-blue" />
             <span className="text-brand-blue font-inter text-[13px] md:text-[15px]">541-343-8000</span>
           </div>
+          </Link>
         </div>
       </div>
 
@@ -300,6 +304,18 @@ export default function Header() {
             >
               <Phone className="w-6 h-6" />
               541-343-8000
+            </a>
+
+            {/* Text/SMS Button */}
+            <a
+              href="sms:541-246-3002"
+              className={`flex items-center justify-center gap-3 w-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-montserrat font-bold text-[18px] px-6 py-4 rounded-[10px] hover:bg-white/20 transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ transitionDelay: isMobileMenuOpen ? '500ms' : '0ms' }}
+            >
+              <MessageSquareText className="w-6 h-6" />
+              541-246-3002
             </a>
           </div>
         </div>

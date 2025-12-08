@@ -114,19 +114,13 @@ County and surrounding regions.</li>
 
             {/* Description */}
             <p className="text-lg text-black/80 leading-relaxed">
-At UC Blinds, we believe every home deserves beautiful, functional window coverings
-— and service that lasts long after installation.
-We design, install, and maintain high-quality blinds, shades, and shutters for homes and
-businesses across Lane County, Roseburg, Bend, Woodburn, Florence, and
-neighboring communities.
-Whether you're upgrading to modern cellular shades or giving your existing blinds new
-life with our ultrasonic cleaning technology, UC Blinds delivers results that look
-better, last longer, and cost less over time. </p>
+At UC Blinds, we believe every space deserves beautiful, functional window coverings — supported by service that goes well beyond installation. We design, install, and maintain high-quality blinds, shades, and shutters for residential properties, rentals, property managers, and businesses throughout Lane County, Roseburg, Bend, Woodburn, Florence, and beyond. Whether you're upgrading to modern cellular shades or extending the life of your existing blinds with our ultrasonic cleaning technology, UC Blinds delivers results that look better, last longer, and offer exceptional long-term value.
+</p>
 
             {/* Stats */}
             <div className="grid grid-cols-1 gap-6 py-8">
               <ul className='list-disc list-outside ml-5 space-y-8 text-black/80 text-xl'>
-                <li><span className='font-bold text-black text-xl'>Tailored solutions for every property type –</span> Serving homes, rentals, commercial spaces, and managed properties with customized window-covering options.</li>
+                <li><span className='font-bold text-black text-xl'>Tailored solutions for every property type –</span> Serving residential, rental, commercial spaces, and managed properties with customized window-covering options.</li>
                 <li><span className='font-bold text-black text-xl'><a className='' href='/warranty'> Ultrasonic blind cleaning that saves you money </a>–</span> Restores and extends the life of existing blinds, helping you avoid unnecessary full replacements.</li>
                 <li><span className='font-bold text-black text-xl'>Trusted by property managers and business owners –</span> Reliable maintenance, consistent quality, and long-term partnership value.</li>
                 <li><span className="font-bold text-black text-xl" >Clear, no-pressure consultations –</span>Straightforward communication, transparent recommendations, and complimentary in-person estimates.</li>

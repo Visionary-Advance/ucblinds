@@ -6,41 +6,17 @@ import {
   CircleDot,
   Boxes,
   Grid3x3,
-  Wind,
+  Zap,
   PanelTop,
   Box
 } from 'lucide-react';
 
 const blindTypes = [
   {
-    name: 'Vertical',
-    icon: MoveVertical,
-    description: 'Perfect for sliding doors and large windows',
-    image: '/Img/Vertical_Blinds_Img.jpg'
-  },
-  {
-    name: 'Horizontal',
-    icon: MoveHorizontal,
-    description: 'Classic style for any window size',
-    image: '/Img/Horizontal_Blinds_Img.jpg'
-  },
-  {
-    name: 'Roller',
-    icon: CircleDot,
-    description: 'Sleek and modern window covering',
-    image: '/Img/Roller_Blinds_Img.webp'
-  },
-  {
     name: 'Cellular',
     icon: Boxes,
     description: 'Energy-efficient honeycomb design',
     image: '/Img/Cellular_Blinds_Img.jpg'
-  },
-  {
-    name: 'Wood',
-    icon: Grid3x3,
-    description: 'Natural wood for elegant spaces',
-    image: '/Img/Wood_Blinds_Img.jpg'
   },
   {
     name: 'Faux Wood',
@@ -49,15 +25,39 @@ const blindTypes = [
     image: '/Img/Faux_Blinds_Img.webp'
   },
   {
-    name: 'Roman Shades',
-    icon: Wind,
-    description: 'Elegant fabric window treatments',
-    image: '/Img/Roman_Blinds_Img.jpg'
+    name: 'Horizontal',
+    icon: MoveHorizontal,
+    description: 'Classic style for any window size',
+    image: '/Img/Horizontal_Blinds_Img.jpg'
   },
   {
-    name: 'Panel Track',
+    name: 'Vertical',
+    icon: MoveVertical,
+    description: 'Perfect for sliding doors and large windows',
+    image: '/Img/Vertical_Blinds_Img.jpg'
+  },
+  {
+    name: 'Roller',
+    icon: CircleDot,
+    description: 'Sleek and modern window covering',
+    image: '/Img/Roller_Blinds_Img.webp'
+  },
+  {
+    name: 'Wood',
+    icon: Grid3x3,
+    description: 'Natural wood for elegant spaces',
+    image: '/Img/Wood_Blinds_Img.jpg'
+  },
+  {
+    name: 'Motorization',
+    icon: Zap,
+    description: 'Motorized shades for modern properties',
+    image: '/Img/Motor.jpg'
+  },
+  {
+    name: 'Specialty ',
     icon: PanelTop,
-    description: 'Modern sliding panel system',
+    description: 'Inquire about additional materials',
     image: '/Img/Panel_Track_Img.webp'
   }
 ];

@@ -18,24 +18,25 @@ export default function ContactHome() {
                     'Vertical blinds',
                     'Horizontal blinds',
                     'Roller shades',
-                    'Roman shades',
+                    'Faux Wood',
                     'Cellular shades',
-                    'Wood blinds'
+                    'Wood blinds',
+                    'Motorized coverings'
                 ],
                 outro: 'Our team is equipped to handle any brand or style.'
             }
         },
         {
             id: 2,
-            question: 'Do you offer free consultations?',
+            question: 'Does UCBlinds offer free consultations?',
             answer: {
-                intro: 'Yes. We offer free in-home consultations throughout Lane County, Springfield, Eugene, Roseburg, Bend, Florence, Woodburn, and nearby areas.\n\nDuring your consultation, we\'ll:',
+                intro: 'Yes. We offer free on-site consultations throughout Lane County, Springfield, Eugene, Roseburg, Bend, Florence, Woodburn, and nearby areas.\n\nDuring your consultation, we\'ll:',
                 list: [
                     'Take precise measurements',
                     'Show you samples and design options',
                     'Provide a clear, no-obligation quote'
                 ],
-                outro: 'You can call 541-343-8000 or text 541-256-2622 to schedule your appointment.'
+                outro: 'You can call 541-343-8000 or text 541-246-3002 to schedule your appointment.'
             }
         },
         {

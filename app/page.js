@@ -21,23 +21,26 @@ export default function LandingPage() {
         alt="Window blinds background"
         speed={0.2}
         overlayClass="bg-black/30"
-        className="w-full -translate-y-2 mt-[45px] pb-10 lg:pb-0 min-h-[900px] lg:min-h-[991px]"
+        className="w-full -translate-y-2 mt-[45px] pb-10 lg:pb-0 min-h-[875px] "
       >
         <div className="justify-center lg:pt-[200px] pt-[120px] px-4 lg:px-8 pb-16 lg:pb-0">
           <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
-              <div className="space-y-6 lg:space-y-8 lg:w-10/12">
+              <div className="space-y-6 lg:space-y-8 lg:w-11/12">
                 <h2 className="font-montserrat tracking-[-1px] font-bold text-white text-[40px] lg:text-[3.75em] leading-tight">
                 Custom Window Coverings &amp; Professional Ultrasonic Blind Cleaning  
                 </h2>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
-                 We provide new window coverings, installation, and blind cleaning for Residential properties, Rentals, Property Management, and Businesses.
+                 We provide new window coverings, installation, and blind cleaning for Residential properties, Rentals, Property Management, and Businesses. Convenient pickup service with flexible turnaround options.
                 </p>
               </div>
               {/* Desktop Form - Inside background */}
-              <div className="hidden lg:block">
+              <div className="hidden lg:block lg:scale-90 lg:origin-top">
                 <BookingForm />
+                <p className="text-white/90 text-center text-sm mt-2 max-w-[400px] mx-auto leading-relaxed">
+                  Local, licensed, and family-owned — Oregon CCB #226429, proudly serving Lane County and surrounding regions.
+                </p>
               </div>
             </div>
           </div>
@@ -46,8 +49,11 @@ export default function LandingPage() {
 
       {/* Mobile Form - Overlapping background and white space */}
       <div className="lg:hidden bg-gray-50 -mb-52">
-        <div className="px-4 -translate-y-64 flex justify-center">
+        <div className="px-4 -translate-y-64 flex flex-col items-center">
           <BookingForm />
+          <p className="text-black/70 text-center text-sm mt-2 max-w-[400px] mx-auto leading-relaxed px-4">
+            Local, licensed, and family-owned — Oregon CCB #226429, proudly serving Lane County and surrounding regions.
+          </p>
         </div>
       </div>
 

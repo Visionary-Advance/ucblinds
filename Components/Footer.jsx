@@ -39,15 +39,12 @@ export default function Footer() {
             <div className="pl-[25px]">
               <h3 className="text-xl font-bold text-black mb-4">Find Us on Social Media</h3>
               <div className="flex gap-4">
-                <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                  <Instagram className="w-6 h-6" />
-                </Link>
-                <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                  <Facebook className="w-6 h-6" />
-                </Link>
-                <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                  <Linkedin className="w-6 h-6" />
-                </Link>
+               <Link href="https://www.instagram.com/ucblindsllc/" className="text-black hover:text-[#357cce] transition-colors">
+                <Instagram className="w-6 h-6" />
+              </Link>
+              <Link href="https://www.facebook.com/UltraCleanLLC.net" className="text-black hover:text-[#357cce] transition-colors">
+                <Facebook className="w-6 h-6" />
+              </Link>
               </div>
             </div>
           </div>
@@ -144,15 +141,13 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold text-black mb-4">Find Us on Social Media</h3>
             <div className="flex gap-4">
-              <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
+              <Link href="https://www.instagram.com/ucblindsllc/" className="text-black hover:text-[#357cce] transition-colors">
                 <Instagram className="w-6 h-6" />
               </Link>
-              <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
+              <Link href="https://www.facebook.com/UltraCleanLLC.net" className="text-black hover:text-[#357cce] transition-colors">
                 <Facebook className="w-6 h-6" />
               </Link>
-              <Link href="#" className="text-black hover:text-[#357cce] transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </Link>
+              
             </div>
           </div>
 

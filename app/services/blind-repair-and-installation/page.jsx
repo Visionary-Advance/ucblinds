@@ -28,7 +28,7 @@ export default function RepairPage() {
                 <ul className="space-y-3 text-white/90">
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
-                    <span>We come to your home to remove your blinds for cleaning or repair</span>
+                    <span>We come to your property to remove your blinds for cleaning or repair</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
@@ -80,7 +80,7 @@ export default function RepairPage() {
           {/* Common Repairs */}
           <div className="bg-white p-8 md:p-12 rounded-[20px] shadow-sm mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-8 text-center">
-              Common Home Blind Repairs
+              Common Blind Repairs
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start gap-4">

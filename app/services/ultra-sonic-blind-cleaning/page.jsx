@@ -28,7 +28,7 @@ export default function CleaningPage() {
                 <ul className="space-y-3 text-white/90">
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
-                    <span>We come to your home to remove your blinds for cleaning or repair</span>
+                    <span>We come to your property to remove your blinds for cleaning or repair</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
@@ -85,7 +85,7 @@ export default function CleaningPage() {
                 1
               </div>
               <p className="text-lg text-black/80">
-                We pick up your blinds from your home
+                We pick up your blinds from your property
               </p>
             </div>
 
@@ -135,7 +135,7 @@ export default function CleaningPage() {
               </div>
               <div className="flex items-center gap-3">
                 <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />
-                <span className="text-lg text-black/80">Allergy-sensitive homes</span>
+                <span className="text-lg text-black/80">Allergy-sensitive properties</span>
               </div>
               <div className="flex items-center gap-3">
                 <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />

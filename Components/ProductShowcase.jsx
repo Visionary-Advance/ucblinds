@@ -70,7 +70,7 @@ export default function ProductShowcase({ products, cityName }) {
     <section className="py-16 px-4 lg:px-16 bg-gradient-to-br from-[#357cce] to-[#9fd7e9]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-          Window Blinds for {cityName} Homes
+          Window Blinds for {cityName} Properties
         </h2>
         <div className="w-16 h-1 mb-2">
           <Image
@@ -83,7 +83,7 @@ export default function ProductShowcase({ products, cityName }) {
         </div>
         <p className="text-xl text-white/90 mb-12 max-w-3xl">
           Choose from our wide selection of premium blinds, shades, and window treatments
-          designed for {cityName} homes.
+          designed for {cityName} properties.
         </p>
 
         {/* Grid layout - matches ServiceHome pattern */}

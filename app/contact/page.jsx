@@ -17,12 +17,13 @@ export default function Contact(){
             answer: {
                 intro: 'We service all types of window treatments including:',
                 list: [
-                    'Vertical blinds',
+                   'Vertical blinds',
                     'Horizontal blinds',
                     'Roller shades',
-                    'Roman shades',
+                    'Faux Wood',
                     'Cellular shades',
-                    'Wood blinds'
+                    'Wood blinds',
+                    'Motorized coverings'
                 ],
                 outro: 'Our team is equipped to handle any brand or style.'
             }
@@ -31,13 +32,13 @@ export default function Contact(){
             id: 2,
             question: 'Do you offer free consultations?',
             answer: {
-                intro: 'Yes. We offer free in-home consultations throughout Lane County, Springfield, Eugene, Roseburg, Bend, Florence, Woodburn, and nearby areas.\n\nDuring your consultation, we\'ll:',
+                intro: 'Yes. We offer free on-site consultations throughout Lane County, Springfield, Eugene, Roseburg, Bend, Florence, Woodburn, and nearby areas.\n\nDuring your consultation, we\'ll:',
                 list: [
                     'Take precise measurements',
                     'Show you samples and design options',
                     'Provide a clear, no-obligation quote'
                 ],
-                outro: 'You can call 541-343-8000 or text 541-256-2622 to schedule your appointment.'
+                outro: 'You can call 541-343-8000 or text 541-246-3002 to schedule your appointment.'
             }
         },
         {
@@ -133,8 +134,8 @@ to hear from you.</p>
                     <div className="bg-gradient-to-br from-[#357CCE]/10 to-[#9FD7E9]/10 rounded-3xl p-6 hover:from-[#357CCE]/20 hover:to-[#9FD7E9]/20 transition-all">
                         <MessageSquare className="w-10 h-10 text-[#357CCE] mb-4" />
                         <p className="font-montserrat text-xs text-gray-600 uppercase tracking-wider mb-2 font-bold">Text</p>
-                        <a href="sms:541-256-2622" className="font-montserrat text-sm lg:text-base text-black font-semibold hover:text-[#357CCE]">
-                            541-256-2622
+                        <a href="sms:541-246-3002" className="font-montserrat text-sm lg:text-base text-black font-semibold hover:text-[#357CCE]">
+                            541-246-3002
                         </a>
                     </div>
 
@@ -151,7 +152,7 @@ to hear from you.</p>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+        <section className="pb-16 px-4 md:px-8 lg:px-16 bg-gray-50">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8 text-center">
                     Frequently Asked Questions

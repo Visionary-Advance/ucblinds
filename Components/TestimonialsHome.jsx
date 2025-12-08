@@ -12,7 +12,7 @@ export default function TestimonialsHome() {
       name: 'Megan R.',
       role: 'Eugene, OR',
       rating: 5,
-      text: 'UC Blinds completely transformed our home. The new shades look stunning, and the cleaning program keeps everything looking brand new.',
+      text: 'UC Blinds completely transformed our property. The new shades look stunning, and the cleaning program keeps everything looking brand new.',
     },
     {
       id: 2,

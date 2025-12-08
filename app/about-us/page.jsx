@@ -108,7 +108,7 @@ energy efficiency, and design — backed by exceptional customer care.          
                     Community
                   </h3>
                   <p className="font-[family-name:var(--font-roboto)] text-base lg:text-lg text-white/90 leading-relaxed text-left">
-                    Proud to serve local homeowners and businesses across western and central Oregon.
+                    Proud to serve residential, rental, and commercial properties across western and central Oregon.
                   </p>
                 </div>
               </div>
@@ -191,7 +191,7 @@ energy efficiency, and design — backed by exceptional customer care.          
             PO Box 70539, Springfield, OR 97475
           </p>
           <p className="font-[family-name:var(--font-roboto)] text-lg sm:text-xl text-white">
-            Call <a href="tel:541-343-8000" className="font-bold hover:underline">541-343-8000</a> or text <a href="sms:541-256-2622" className="font-bold hover:underline">541-256-2622</a> to connect with a UC Blinds expert today.
+            Call <a href="tel:541-343-8000" className="font-bold hover:underline">541-343-8000</a> or text <a href="sms:541-246-3002" className="font-bold hover:underline">541-246-3002</a> to connect with a UC Blinds expert today.
           </p>
         </div>
       </section>

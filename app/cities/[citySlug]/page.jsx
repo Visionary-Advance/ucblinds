@@ -107,7 +107,7 @@ export default async function CityLandingPage({ params }) {
           </h2>
           <div className="w-16 h-1 bg-[#357cce] mb-4 mx-auto"></div>
           <p className="text-xl text-center text-black/70 mb-12 max-w-3xl mx-auto">
-            Real {city.name} homes transformed with our premium blind installations.
+            Real {city.name} properties transformed with our premium blind installations.
             Experience the difference quality window treatments can make.
           </p>
 
@@ -183,11 +183,11 @@ export default async function CityLandingPage({ params }) {
       <section className="py-16 px-4 lg:px-16 bg-gradient-to-br from-[#357cce] to-[#9fd7e9]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your {city.name} Home?
+            Ready to Transform Your {city.name} Property?
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
             Get your free consultation today. No obligation, just expert advice tailored to
-            your {city.name} home. Our team is ready to help you find the perfect window
+            your {city.name} property. Our team is ready to help you find the perfect window
             treatments.
           </p>
           <a
@@ -198,7 +198,7 @@ export default async function CityLandingPage({ params }) {
             {city.phoneNumber}
           </a>
           <p className="text-white/80 mt-6">
-            Or visit our contact page to schedule an in-home consultation
+            Or visit our contact page to schedule an on-site consultation
           </p>
         </div>
       </section>

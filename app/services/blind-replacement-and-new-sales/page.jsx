@@ -16,7 +16,7 @@ export default function ReplacementPage() {
             {/* Left side - Content */}
             <div className="text-white space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Blind Replacement & New Installation
+                Blind Replacement & New Sales
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed">
@@ -28,7 +28,7 @@ export default function ReplacementPage() {
                 <ul className="space-y-3 text-white/90">
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
-                    <span>We come to your home to remove your blinds for cleaning or repair</span>
+                    <span>We come to your property to remove your blinds for cleaning or repair</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
@@ -74,7 +74,7 @@ export default function ReplacementPage() {
               When It's Time for Something New
             </h2>
             <p className="text-xl text-black/80 leading-relaxed">
-              If your blinds are worn out, outdated, or beyond repair, we help you choose beautiful replacements that fit your home and budget.
+              If your blinds are worn out, outdated, or beyond repair, we help you choose beautiful replacements that fit your property and budget.
             </p>
           </div>
 
