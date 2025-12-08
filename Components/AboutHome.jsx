@@ -20,7 +20,7 @@ export default function AboutHome() {
             {/* Heading with underline */}
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
-                Why Homeowners Choose{' '}
+                Why Choose{' '}
                 <span className="bg-gradient-to-r from-brand-blue-light to-brand-blue bg-clip-text text-transparent">
                   UC Blinds
                 </span>{' '}
@@ -39,14 +39,7 @@ export default function AboutHome() {
 
             {/* Description */}
             <p className="text-xl md:text-2xl xl:text-lg text-black/80 leading-relaxed">
-At UC Blinds, we believe every home deserves beautiful, functional window coverings
-— and service that lasts long after installation.
-We design, install, and maintain high-quality blinds, shades, and shutters for homes and
-businesses across Lane County, Roseburg, Bend, Woodburn, Florence, and
-neighboring communities.
-Whether you’re upgrading to modern cellular shades or giving your existing blinds new
-life with our ultrasonic cleaning technology, UC Blinds delivers results that look
-better, last longer, and cost less over time. </p>
+At UC Blinds, we believe every space deserves beautiful, functional window coverings — supported by service that goes well beyond installation. We design, install, and maintain high-quality blinds, shades, and shutters for residential properties, rentals, property managers, and businesses throughout Lane County, Roseburg, Bend, Woodburn, Florence, and beyond. Whether you're upgrading to modern cellular shades or extending the life of your existing blinds with our ultrasonic cleaning technology, UC Blinds delivers results that look better, last longer, and offer exceptional long-term value. </p>
 
             {/* Stats */}
             <div className="grid grid-cols-1 gap-6 py-4 lg:py-8">
@@ -102,7 +95,7 @@ County and surrounding regions.</li>
             {/* Heading with underline */}
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
-                Why Homeowners Choose{' '}
+                Why Choose{' '}
                 <span className="bg-gradient-to-r from-brand-blue-light to-brand-blue bg-clip-text text-transparent">
                   UC Blinds
                 </span>{' '}
@@ -133,16 +126,11 @@ better, last longer, and cost less over time. </p>
             {/* Stats */}
             <div className="grid grid-cols-1 gap-6 py-8">
               <ul className='list-disc list-outside ml-5 space-y-8 text-black/80 text-xl'>
-                <li><span className='font-bold text-black text-xl'>Full-Service Experts –</span> From new window coverings to cleaning, repair, and
-installation, we handle every stage with precision and care.</li>
-                <li><span className='font-bold text-black text-xl'><a className='' href='/warranty'> Limited Lifetime Warranty </a>–</span> Buy your blinds or shades from UC Blinds and
-enjoy discounted professional cleaning for life.</li>
-                <li><span className='font-bold text-black text-xl'>Ultrasonic Cleaning Technology –</span> Our state-of-the-art system cleans deeper
-and more gently than any traditional method.</li>
-                <li><span className="font-bold text-black text-xl" >Specialty in Cellular Shades –</span>We're one of the few companies in Oregon
-trained and equipped to safely clean delicate cellular or honeycomb shades.</li>
-                <li><span className='font-bold text-black text-xl'>Local &amp; Licensed –</span> Family-owned, Oregon CCB #226429, proudly serving Lane
-County and surrounding regions.</li>
+                <li><span className='font-bold text-black text-xl'>Tailored solutions for every property type –</span> Serving homes, rentals, commercial spaces, and managed properties with customized window-covering options.</li>
+                <li><span className='font-bold text-black text-xl'><a className='' href='/warranty'> Ultrasonic blind cleaning that saves you money </a>–</span> Restores and extends the life of existing blinds, helping you avoid unnecessary full replacements.</li>
+                <li><span className='font-bold text-black text-xl'>Trusted by property managers and business owners –</span> Reliable maintenance, consistent quality, and long-term partnership value.</li>
+                <li><span className="font-bold text-black text-xl" >Clear, no-pressure consultations –</span>Straightforward communication, transparent recommendations, and complimentary in-person estimates.</li>
+                <li><span className='font-bold text-black text-xl'>Limited lifetime value –</span>Purchase blinds or shades from UC Blinds and receive discounted professional cleaning for life.</li>
               </ul>
             </div>
 
