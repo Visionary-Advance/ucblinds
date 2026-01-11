@@ -22,7 +22,7 @@ trusted blind cleaning service.        </p>
         <div className="lg:hidden mb-6">
           <div className="relative w-full max-w-[350px] ms-auto aspect-[350/258] rounded-[20px] z-50 overflow-hidden">
             <Image
-              src="/Img/mission-team.png"
+              src="/Img/Mission_Img.jpg"
               alt="Professional team collaboration"
               fill
               className="object-cover"
@@ -128,7 +128,7 @@ energy efficiency, and design — backed by exceptional customer care.          
 
             {/* Mobile: Image Below */}
             <div className="lg:hidden w-full">
-              <div className="relative w-full max-w-[397px] mx-auto aspect-[397/253] rounded-[20px] overflow-hidden">
+              <div className="relative w-full max-w-[397px] mx-auto aspect-[397/397] rounded-[20px] overflow-hidden">
                 <Image
                   src="/Img/Values_Img.webp"
                   alt="Professional partnership handshake"
