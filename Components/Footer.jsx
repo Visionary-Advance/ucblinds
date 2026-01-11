@@ -90,6 +90,11 @@ export default function Footer() {
                   Limited Lifetime Cleaning Terms
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy-policy" className=" text-black/90 hover:text-[#357cce] transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 

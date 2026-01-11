@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Check, Zap, Circle } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 export default function CleaningPage() {
   return (
@@ -10,13 +10,12 @@ export default function CleaningPage() {
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-br from-brand-blue-light to-brand-blue py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          {/* Small text above */}
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Content */}
             <div className="text-white space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Residential Blind Cleaning
+                Ultrasonic Blind Cleaning
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed">
@@ -49,7 +48,6 @@ export default function CleaningPage() {
                 </ul>
               </div>
 
-             
             </div>
 
             {/* Right side - Image */}
@@ -78,74 +76,101 @@ export default function CleaningPage() {
             </p>
           </div>
 
-          {/* Process Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-[10px] shadow-sm">
-              <div className="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
-                1
+          {/* Benefits of Ultrasonic Cleaning */}
+          <div className="bg-white p-8 md:p-12 rounded-[20px] shadow-sm mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-8 text-center">
+              Why Ultrasonic Cleaning?
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="w-3 h-3 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-black mb-2">
+                    Deep Cleans Every Surface
+                  </h4>
+                  <p className="text-black/70">
+                    Sound wave technology reaches into crevices, cords, and mechanisms that hand cleaning can't touch.
+                  </p>
+                </div>
               </div>
-              <p className="text-lg text-black/80">
-                We pick up your blinds from your property
-              </p>
-            </div>
 
-            <div className="bg-white p-6 rounded-[10px] shadow-sm">
-              <div className="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
-                2
+              <div className="flex items-start gap-4">
+                <div className="w-3 h-3 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-black mb-2">
+                    Removes Allergens & Pollutants
+                  </h4>
+                  <p className="text-black/70">
+                    Eliminates dust, pollen, cooking grease, smoke residue, and pet dander trapped in your blinds.
+                  </p>
+                </div>
               </div>
-              <p className="text-lg text-black/80">
-                Clean them using ultrasonic technology
-              </p>
-            </div>
 
-            <div className="bg-white p-6 rounded-[10px] shadow-sm">
-              <div className="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
-                3
+              <div className="flex items-start gap-4">
+                <div className="w-3 h-3 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-black mb-2">
+                    Gentle on Delicate Materials
+                  </h4>
+                  <p className="text-black/70">
+                    Safe for cellular shades, fabric blinds, and other delicate window treatments that can't be wiped down.
+                  </p>
+                </div>
               </div>
-              <p className="text-lg text-black/80">
-                Then return and rehang them for you
-              </p>
-            </div>
 
-            <div className="bg-white p-6 rounded-[10px] shadow-sm">
-              <div className="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center mb-4">
-                <Zap className="w-6 h-6" />
+              <div className="flex items-start gap-4">
+                <div className="w-3 h-3 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <h4 className="text-xl font-semibold text-black mb-2">
+                    Eco-Friendly Process
+                  </h4>
+                  <p className="text-black/70">
+                    Uses environmentally friendly solutions without harsh chemicals or excessive water waste.
+                  </p>
+                </div>
               </div>
-              <p className="text-lg text-black/80">
-                Same-day or 24-hour turnaround available in Lane County
-              </p>
             </div>
           </div>
 
-          {/* Perfect For Section */}
-          <div className="bg-white p-8 rounded-[20px] shadow-sm">
-            <h3 className="text-2xl font-bold text-black mb-6">Perfect for:</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="flex items-center gap-3">
-                <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />
-                <span className="text-lg text-black/80">Kitchens</span>
+          {/* Process Section */}
+          <div className="bg-white p-8 rounded-[20px] shadow-sm mb-12">
+            <h3 className="text-2xl font-bold text-black mb-6 text-center">Our Cleaning Process</h3>
+            <div className="max-w-3xl me-auto space-y-6">
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                  1
+                </div>
+                <div>
+                  <p className="text-lg text-black/80">
+                    We pick up your blinds from your property
+                  </p>
+                </div>
               </div>
-              <div className="flex items-center gap-3">
-                <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />
-                <span className="text-lg text-black/80">Bathrooms</span>
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                  2
+                </div>
+                <div>
+                  <p className="text-lg text-black/80">
+                    Clean them using ultrasonic technology at our facility
+                  </p>
+                </div>
               </div>
-              <div className="flex items-center gap-3">
-                <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />
-                <span className="text-lg text-black/80">High-traffic rooms</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />
-                <span className="text-lg text-black/80">Allergy-sensitive properties</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Circle className="w-2 h-2 fill-brand-blue text-brand-blue flex-shrink-0" />
-                <span className="text-lg text-black/80">Rentals</span>
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                  3
+                </div>
+                <div>
+                  <p className="text-lg text-black/80">
+                    Return and rehang them professionally at your convenience
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-12">
+          <div className="text-center">
             <Link href="/contact">
               <button className="bg-brand-blue hover:brightness-90 text-white font-bold text-lg px-10 py-4 rounded-[5px] transition-colors duration-200">
                 Schedule Blind Cleaning Pickup
