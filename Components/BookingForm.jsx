@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Link from "next/link";
 
 export default function BookingForm() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -17,7 +18,9 @@ export default function BookingForm() {
     // Step 2: Services
     serviceType: [],
     blindTypes: [],
-    urgency: ""
+    urgency: "",
+    // SMS Consent
+    smsConsent: null
   });
 
   const handleInputChange = (field, value) => {
@@ -47,7 +50,7 @@ export default function BookingForm() {
   };
 
   const handleNext = () => {
-    if (currentStep < 3) {
+    if (currentStep < 4) {
       setCurrentStep(currentStep + 1);
     }
   };
@@ -92,7 +95,8 @@ export default function BookingForm() {
             contactMethod: "phone",
             serviceType: [],
             blindTypes: [],
-            urgency: ""
+            urgency: "",
+            smsConsent: null
           });
         }, 4000);
       } else {
@@ -181,6 +185,25 @@ export default function BookingForm() {
               currentStep >= 3 ? 'bg-brand-blue' : 'bg-[#989898]'
             }`}>
               <span className="font-montserrat font-bold text-white text-[20px]">3</span>
+            </div>
+            <span className="font-montserrat font-bold text-white text-[12px]">Consent</span>
+          </div>
+
+          {/* Line between 3 and 4 */}
+          <div className="flex-1 h-[2px] bg-white/40 mx-2 relative overflow-hidden mb-4">
+            <div
+              className={`absolute top-0 left-0 h-full bg-brand-blue transition-all duration-500 ${
+                currentStep >= 4 ? 'w-full' : 'w-0'
+              }`}
+            ></div>
+          </div>
+
+          {/* Step 4 */}
+          <div className="flex flex-col items-center gap-1">
+            <div className={`w-[40px] h-[40px] rounded-full flex items-center justify-center transition-colors duration-300 ${
+              currentStep >= 4 ? 'bg-brand-blue' : 'bg-[#989898]'
+            }`}>
+              <span className="font-montserrat font-bold text-white text-[20px]">4</span>
             </div>
             <span className="font-montserrat font-bold text-white text-[12px]">Confirm</span>
           </div>
@@ -457,8 +480,93 @@ export default function BookingForm() {
               </div>
             )}
 
-            {/* Step 3: Confirmation */}
+            {/* Step 3: SMS Consent */}
             {currentStep === 3 && (
+              <div className="animate-fadeIn">
+                {/* Form Title */}
+                <div className="mb-8 flex flex-col items-center">
+                  <div className="flex items-center gap-2 mb-2">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    <h3 className="font-montserrat font-bold text-black text-[20px]">SMS Consent</h3>
+                  </div>
+                  <p className="font-montserrat text-black text-[14px] text-center">Would you like to receive text message updates?</p>
+                </div>
+
+                {/* SMS Consent Section */}
+                <div className="bg-white p-6 rounded-[5px] border border-black/20">
+                  <div className="space-y-4">
+                    <p className="font-inter text-[14px] text-black/80 leading-relaxed">
+                      Do you Agree to receive text messages from UC Blinds sent from <span className="font-semibold">541-343-8000</span>. Message frequency varies based on communication needs and may include instant response texts for missed calls, or follow-up messages to assist customers. Message and data rates may apply. Reply STOP or CANCEL at any time to opt-out of further text message communications. For assistance, reply HELP or contact support at: <span className="font-semibold">541-343-8000</span>
+                    </p>
+
+                    {/* Radio Buttons for Yes/No */}
+                    <div className="space-y-3">
+                      {/* Yes Option */}
+                      <label className="flex items-start gap-3 cursor-pointer group">
+                        <input
+                          type="radio"
+                          name="smsConsent"
+                          value="yes"
+                          checked={formData.smsConsent === 'yes'}
+                          onChange={(e) => handleInputChange('smsConsent', e.target.value)}
+                          className="mt-1 w-5 h-5 text-brand-blue focus:ring-brand-blue focus:ring-2 cursor-pointer"
+                        />
+                        <span className="font-inter text-[14px] text-black/80 group-hover:text-black">
+                          Yes, I agree to receive text messages from UC Blinds sent from 541-343-8000
+                        </span>
+                      </label>
+
+                      {/* No Option */}
+                      <label className="flex items-start gap-3 cursor-pointer group">
+                        <input
+                          type="radio"
+                          name="smsConsent"
+                          value="no"
+                          checked={formData.smsConsent === 'no'}
+                          onChange={(e) => handleInputChange('smsConsent', e.target.value)}
+                          className="mt-1 w-5 h-5 text-brand-blue focus:ring-brand-blue focus:ring-2 cursor-pointer"
+                        />
+                        <span className="font-inter text-[14px] text-black/80 group-hover:text-black">
+                          No, I don&apos;t want to receive text messages from UC Blinds.
+                        </span>
+                      </label>
+                    </div>
+
+                    <p className="font-inter text-[13px] text-black/60 pt-2">
+                      See our{' '}
+                      <Link href="/privacy-policy" className="text-brand-blue hover:underline font-semibold">
+                        Privacy Policy
+                      </Link>{' '}
+                      for details on how we handle your information.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Navigation Buttons */}
+                <div className="flex justify-between pt-4">
+                  <button
+                    type="button"
+                    onClick={handleBack}
+                    className="bg-neutral-100 text-black/70 border border-black/40 font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:bg-neutral-200 transition-colors"
+                  >
+                    Back
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="bg-brand-blue text-white font-montserrat font-bold text-[16px] px-8 py-4 rounded-[5px] h-[55px] hover:opacity-90 transition-opacity"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 4: Confirmation */}
+            {currentStep === 4 && (
               <div className="animate-fadeIn">
                 {/* Form Title */}
                 <div className="mb-8 flex flex-col items-center">
@@ -530,6 +638,32 @@ export default function BookingForm() {
                       <p><span className="font-semibold">Services:</span> {formData.serviceType.length > 0 ? formData.serviceType.join(', ') : 'None selected'}</p>
                       <p><span className="font-semibold">Blind Types:</span> {formData.blindTypes.length > 0 ? formData.blindTypes.join(', ') : 'None selected'}</p>
                       <p><span className="font-semibold">Urgency:</span> {formData.urgency || 'Not specified'}</p>
+                    </div>
+                  </div>
+
+                  {/* SMS Consent Summary */}
+                  <div className="bg-white p-4 rounded-[5px] border border-black/20">
+                    <div className="flex items-center justify-between mb-3">
+                      <h4 className="font-montserrat font-bold text-black text-[16px]">SMS Consent</h4>
+                      <button
+                        type="button"
+                        onClick={() => handleEdit(3)}
+                        className="text-brand-blue font-montserrat font-bold text-[14px] hover:opacity-80"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <div className="space-y-2 font-inter text-[14px] text-black/70">
+                      <p>
+                        <span className="font-semibold">Text Messages:</span>{' '}
+                        {formData.smsConsent === 'yes' ? (
+                          <span className="text-green-600">✓ Opted In</span>
+                        ) : formData.smsConsent === 'no' ? (
+                          <span className="text-gray-600">Opted Out</span>
+                        ) : (
+                          'Not selected'
+                        )}
+                      </p>
                     </div>
                   </div>
                 </div>

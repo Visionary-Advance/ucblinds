@@ -22,7 +22,7 @@ const blindTypes = [
     name: 'Faux Wood',
     icon: Box,
     description: 'Durable wood-look alternative',
-    image: '/Img/Faux_Blinds_Img.webp'
+    image: '/Img/Faux_shades.jpg'
   },
   {
     name: 'Horizontal',
@@ -52,7 +52,7 @@ const blindTypes = [
     name: 'Motorization',
     icon: Zap,
     description: 'Motorized shades for modern properties',
-    image: '/Img/Motor.jpg'
+    image: '/Img/motorized_shades.png'
   },
   {
     name: 'Specialty ',

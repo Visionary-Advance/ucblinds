@@ -17,11 +17,11 @@ export default function LandingPage() {
 
       {/* Hero Section with Parallax Background */}
       <ParallaxBackground
-        imageSrc="/Img/rollerhades_creme.webp"
-        alt="Window blinds background"
+        imageSrc="/Img/energy-efficient-cellular-shades-home.jpg"
+        alt="Living room featuring energy-efficient cellular shades on bay windows"
         speed={0.2}
         overlayClass="bg-black/30"
-        className="w-full -translate-y-2 mt-[45px] pb-10 lg:pb-0 min-h-[875px] "
+        className="w-full -translate-y-2 mt-[45px] pb-10 lg:pb-0 min-h-[700px] "
       >
         <div className="justify-center lg:pt-[200px] pt-[120px] px-4 lg:px-8 pb-16 lg:pb-0">
           <div className="max-w-[1400px] mx-auto">
@@ -48,8 +48,8 @@ export default function LandingPage() {
       </ParallaxBackground>
 
       {/* Mobile Form - Overlapping background and white space */}
-      <div className="lg:hidden bg-gray-50 -mb-52">
-        <div className="px-4 -translate-y-64 flex flex-col items-center">
+      <div className="lg:hidden bg-gray-50 -mb-30">
+        <div className="px-4 -translate-y-26.5 flex flex-col items-center">
           <BookingForm />
           <p className="text-black/70 text-center text-sm mt-2 max-w-[400px] mx-auto leading-relaxed px-4">
             Local, licensed, and family-owned — Oregon CCB #226429, proudly serving Lane County and surrounding regions.

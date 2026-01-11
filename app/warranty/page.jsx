@@ -14,11 +14,11 @@ export default function Warranty(){
       
       <div className="space-y-6 text-gray-700">
         <p>
-          Ultra Clean LLC (the "Company") warrants its products to be free from defects in workmanship and materials for a period of 1 year from the date of purchase.
+          UC Blinds (the "Company") warrants its products to be free from defects in workmanship and materials for a period of 1 year from the date of purchase.
         </p>
-        
+
         <p>
-          The Company is not responsible for any incidental costs or consequential damages. Abuse, misuse, and inappropriate application of Ultra Clean LLC products are not covered under this warranty and are the responsibility of the tenants' or Property Management.
+          The Company is not responsible for any incidental costs or consequential damages. Abuse, misuse, and inappropriate application of UC Blinds products are not covered under this warranty and are the responsibility of the tenants' or Property Management.
         </p>
         
         <p>

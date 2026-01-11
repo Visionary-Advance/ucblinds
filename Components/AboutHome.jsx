@@ -9,7 +9,7 @@ export default function AboutHome() {
         <div className="lg:hidden space-y-8">
           <div className="relative w-full h-[400px] rounded-[20px] overflow-hidden shadow-xl">
             <Image
-              src="/Img/About_Home_Img.jpg"
+              src="/Img/window-measurement-for-custom-blinds-installation.jpg"
               alt="UC Blinds professional team cleaning and installing window blinds"
               fill
               className="object-cover"
@@ -80,7 +80,7 @@ County and surrounding regions.</li>
             >
               <div className="relative w-[500px] h-[500px] rounded-[20px] overflow-hidden shadow-xl">
                 <Image
-                  src="/Img/About_Home_Img.jpg"
+                 src="/Img/window-measurement-for-custom-blinds-installation.jpg"
                   alt="UC Blinds professional team cleaning and installing window blinds"
                   fill
                   className="object-cover"

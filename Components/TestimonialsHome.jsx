@@ -26,7 +26,7 @@ export default function TestimonialsHome() {
       name: 'Kristine Z.',
       role: 'Eugene, OR',
       rating: 5,
-      text: 'Ultra Clean is our go to company for anything blind related. They have been quick and responsive to all our properties and have been so very great to work with.',
+      text: 'UC Blinds is our go to company for anything blind related. They have been quick and responsive to all our properties and have been so very great to work with.',
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export default function TestimonialsHome() {
       name: 'Tim O.',
       role: 'Springfield, OR',
       rating: 5,
-      text: 'The guys at Ultra Clean do a fabulous job. They come measure and install blinds at a reasonable price. They also will clean blinds as well as replace blinds that get damaged over time. Very nice folks to work with.',
+      text: 'The guys at UC Blinds do a fabulous job. They come measure and install blinds at a reasonable price. They also will clean blinds as well as replace blinds that get damaged over time. Very nice folks to work with.',
     },
   ];
 
