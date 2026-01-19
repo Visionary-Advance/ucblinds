@@ -54,7 +54,7 @@ export default function RepairPage() {
             {/* Right side - Image */}
             <div className="relative w-full h-[400px] lg:h-[550px] rounded-[20px] overflow-hidden">
               <Image
-                src="/Img/Blind_Repair_Hero.webp"
+                src="/Img/window-blind-repair-installation.jpg"
                 alt="UC Blinds professional team repairing window blinds"
                 fill
                 className="object-cover"
