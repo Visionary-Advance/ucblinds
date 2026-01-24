@@ -14,7 +14,7 @@ export default function WhyChooseUs({ benefits, cityName }) {
     <section className="py-16 px-4 lg:px-16 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4 text-center">
-          Why Choose UCBlinds in {cityName}?
+          Why Choose UC Blinds in {cityName}?
         </h2>
         <div className="w-16 h-1 bg-[#357cce] mb-12 mx-auto"></div>
 

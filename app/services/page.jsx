@@ -100,7 +100,7 @@ export default function ServicesPage() {
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Why Choose UCBlinds?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Why Choose UC Blinds?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-3">
               <h3 className="text-xl font-bold text-[#357cce]">Licensed & Insured</h3>

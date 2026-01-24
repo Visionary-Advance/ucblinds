@@ -20,7 +20,7 @@ export default function ReplacementPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                At UCBlinds, we help homeowners maintain and refresh their window coverings. Whether your blinds need deep cleaning, repair, or full replacement, our team makes the process easy and stress-free.
+                At UC Blinds, we help homeowners maintain and refresh their window coverings. Whether your blinds need deep cleaning, repair, or full replacement, our team makes the process easy and stress-free.
               </p>
 
               <div>
@@ -32,7 +32,7 @@ export default function ReplacementPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
-                    <span>Fast turnaround — often same-day or within 24 hours in Lane County</span>
+                    <span>Fast, Reliable turnaround tailored to your schedule</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
@@ -140,6 +140,18 @@ export default function ReplacementPage() {
                   </svg>
                 </div>
                 <h4 className="text-xl font-semibold text-black mb-2">Privacy & Light Control</h4>
+                <p className="text-black/70">
+                  Customizable options for every room's needs
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h4 className="text-xl font-semibold text-black mb-2">Motorization</h4>
                 <p className="text-black/70">
                   Customizable options for every room's needs
                 </p>

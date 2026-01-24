@@ -52,7 +52,7 @@ const blindTypes = [
     name: 'Motorization',
     icon: Zap,
     description: 'Motorized shades for modern properties',
-    image: '/Img/motorized_shades.png'
+    image: '/Img/motorized_shades.PNG'
   },
   {
     name: 'Specialty ',

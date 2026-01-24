@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Areas We Serve | UCBlinds - Oregon Blind Services',
-  description: 'UCBlinds serves Eugene, Bend, Springfield, Woodburn, and surrounding Oregon communities with professional blind sales, installation, and cleaning.',
+  title: 'Areas We Serve | UC Blinds - Oregon Blind Services',
+  description: 'UC Blinds serves Eugene, Bend, Springfield, Woodburn, and surrounding Oregon communities with professional blind sales, installation, and cleaning.',
 };
 
 export default function CitiesOverview() {
@@ -16,7 +16,7 @@ export default function CitiesOverview() {
         <h1 className="text-5xl font-bold mb-6 text-black">Areas We Serve</h1>
         <div className="w-16 h-1 bg-[#357cce] mb-6"></div>
         <p className="text-xl text-black/70 mb-12 max-w-3xl">
-          UCBlinds is proud to serve communities across Oregon with premium window blind sales,
+          UC Blinds is proud to serve communities across Oregon with premium window blind sales,
           installation, cleaning, and repair services. Click on your city to learn more about
           our services in your area.
         </p>

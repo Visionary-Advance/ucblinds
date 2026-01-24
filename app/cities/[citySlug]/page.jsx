@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
 
   if (!city) {
     return {
-      title: 'City Not Found | UCBlinds',
+      title: 'City Not Found | UC Blinds',
     };
   }
 
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
       title: city.metaTitle,
       description: city.metaDescription,
       url: `https://ucblinds.com/cities/${city.slug}`,
-      siteName: 'UCBlinds',
+      siteName: 'UC Blinds',
       locale: 'en_US',
       type: 'website',
     },
@@ -70,7 +70,7 @@ export default async function CityLandingPage({ params }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "UCBlinds",
+    "name": "UC Blinds",
     "image": city.hero.backgroundImage,
     "@id": `https://ucblinds.com/cities/${city.slug}`,
     "url": `https://ucblinds.com/cities/${city.slug}`,

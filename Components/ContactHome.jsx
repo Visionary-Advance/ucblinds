@@ -28,7 +28,7 @@ export default function ContactHome() {
         },
         {
             id: 2,
-            question: 'Does UCBlinds offer free consultations?',
+            question: 'Does UC Blinds offer free consultations?',
             answer: {
                 intro: 'Yes. We offer free on-site consultations throughout Lane County, Springfield, Eugene, Roseburg, Bend, Florence, Woodburn, and nearby areas.\n\nDuring your consultation, we\'ll:',
                 list: [

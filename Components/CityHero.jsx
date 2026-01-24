@@ -51,7 +51,7 @@ export default function CityHero({ city }) {
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-6 h-6" />
-              <span className="text-lg">Lifetime Warranty</span>
+              <span className="text-lg">Discounted Cleaning Warranty</span>
             </div>
             <div className="flex items-center gap-2">
               <Truck className="w-6 h-6" />

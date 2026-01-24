@@ -20,7 +20,7 @@ export default function RepairPage() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                At UCBlinds, we help homeowners maintain and refresh their window coverings. Whether your blinds need deep cleaning, repair, or full replacement, our team makes the process easy and stress-free.
+                At UC Blinds, we help homeowners maintain and refresh their window coverings. Whether your blinds need deep cleaning, repair, or full replacement, our team makes the process easy and stress-free.
               </p>
 
               <div>
@@ -32,7 +32,7 @@ export default function RepairPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />
-                    <span>Fast turnaround — often same-day or within 24 hours in Lane County</span>
+                    <span>Fast, Reliable turnaround tailored to your schedule</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-0.5" />

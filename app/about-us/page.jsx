@@ -20,10 +20,10 @@ trusted blind cleaning service.        </p>
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-20">
         {/* Mobile: Image First */}
         <div className="lg:hidden mb-6">
-          <div className="relative w-full max-w-[350px] ms-auto aspect-[350/258] rounded-[20px] z-50 overflow-hidden">
+          <div className="relative w-full max-w-[350px] ms-auto aspect-[350/350] rounded-[20px] z-50 overflow-hidden">
             <Image
-              src="/Img/Mission_Img.jpg"
-              alt="Professional team collaboration"
+              src="/Img/uc-blinds-local-trusted-home-service-badge.png"
+              alt="UC Blinds - Locally Owned & Trusted Home Service"
               fill
               className="object-cover"
             />
@@ -43,16 +43,16 @@ trusted blind cleaning service.        </p>
                 Our Mission
               </h2>
               <p className="font-[family-name:var(--font-roboto)] text-lg sm:text-xl lg:text-xl text-black/80 leading-relaxed lg:max-w-xl xl:max-w-2xl">
-To deliver high-quality window treatments and cleaning services that improve comfort,
+To deliver high-quality window coverings and cleaning services that improve comfort,
 energy efficiency, and design — backed by exceptional customer care.              </p>
             </div>
 
             {/* Desktop: Image on Right */}
             <div className="hidden lg:block">
-              <div className="absolute top-5 right-0 lg:translate-x-32 xl:translate-x-48 2xl:translate-x-56 lg:w-[350px] lg:h-[240px] xl:w-[400px] xl:h-[275px] 2xl:w-[439px] 2xl:h-[300px] rounded-[20px] overflow-hidden flex-shrink-0">
+              <div className="absolute top-5 right-0 lg:translate-x-32 xl:translate-x-48 2xl:translate-x-56 lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] 2xl:w-[350px] 2xl:h-[350px] rounded-[20px] overflow-hidden flex-shrink-0">
                 <Image
-                  src="/Img/Mission_Img.jpg"
-                  alt="Professional team collaboration"
+                 src="/Img/uc-blinds-local-trusted-home-service-badge.png"
+              alt="UC Blinds - Locally Owned & Trusted Home Service"
                   fill
                   className="object-cover"
                 />
@@ -152,7 +152,7 @@ energy efficiency, and design — backed by exceptional customer care.          
           <div className="relative me-auto lg:mx-0 w-[250px] lg:w-[321px] h-[350px] lg:h-[450px] overflow-hidden flex-shrink-0">
             <Image
               src="/Img/brett-hansen.png"
-              alt="Brett Hansen, Owner of UCBlinds"
+              alt="Brett Hansen, Owner of UC Blinds"
               fill
               className="object-cover"
             />
@@ -168,7 +168,7 @@ energy efficiency, and design — backed by exceptional customer care.          
             </p>
             <div className="font-[family-name:var(--font-roboto)] text-base text-lg text-black leading-relaxed space-y-4 lg:max-w-[798px]">
               <p>
-                Thank you for looking at this page. My name is Brett, and I am the owner of UCBlinds. I started UCBlinds in 2018, with a long history in the window covering business. Growing up in the window covering business has taught me a lot over many years. The experiences and lessons that I have learned have enabled me to make sure every Property Owner, Property manager, Family, Tenant, and homeowner does not spend one night without window coverings and is treated fairly, no matter what in a timely manner.
+                Thank you for looking at this page. My name is Brett, and I am the owner of UC Blinds. I started UC Blinds in 2018, with a long history in the window covering business. Growing up in the window covering business has taught me a lot over many years. The experiences and lessons that I have learned have enabled me to make sure every Property Owner, Property manager, Family, Tenant, and homeowner does not spend one night without window coverings and is treated fairly, no matter what in a timely manner.
               </p>
               <p>
                 My Motto is to: Be Kind, Be Humble, Be Respectful, Be Loving, Be Caring, Be Trustworthy, Be You! Don&apos;t forget &quot;Yes Sir&quot; &amp; &quot;Yes Ma&apos;am.&quot;
