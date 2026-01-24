@@ -61,7 +61,7 @@ County and surrounding regions.</li>
 
             {/* CTA Button */}
             <div>
-              <Link href={"/about"}>
+              <Link href={"/about-us"}>
               <button className="bg-brand-blue cursor-pointer hover:brightness-90 text-white font-bold text-base px-8 py-4 rounded-[5px] transition-colors duration-200">
                 View More
               </button>
@@ -130,7 +130,7 @@ At UC Blinds, we believe every space deserves beautiful, functional window cover
 
             {/* CTA Button */}
             <div>
-              <Link href={"/about"}>
+              <Link href={"/about-us"}>
               <button className="bg-brand-blue cursor-pointer hover:brightness-90 text-white font-bold text-base px-8 py-4 rounded-[5px] transition-colors duration-200">
                 View More
               </button>
