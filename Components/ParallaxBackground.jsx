@@ -43,7 +43,7 @@ export default function ParallaxBackground({
     <section ref={sectionRef} className={`relative overflow-hidden ${className}`}>
       {/* Background Image with Parallax */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute -top-[20%] -bottom-[20%] left-0 right-0 z-0"
         style={{
           transform: `translateY(${scrollY}px)`,
           willChange: 'transform'

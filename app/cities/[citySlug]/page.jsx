@@ -100,7 +100,7 @@ export default async function CityLandingPage({ params }) {
       <CityHero city={city} />
 
       {/* Before/After Comparison Section */}
-      <section className="py-16 px-4 lg:px-16 bg-white">
+      {/* <section className="py-16 px-4 lg:px-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4 text-center">
             See the Transformation
@@ -111,7 +111,7 @@ export default async function CityLandingPage({ params }) {
             Experience the difference quality window treatments can make.
           </p>
 
-          {/* Before/After Sliders */}
+          {/* Before/After Sliders 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {city.beforeAfter.map((item) => (
               <div key={item.id}>
@@ -127,7 +127,7 @@ export default async function CityLandingPage({ params }) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Product Showcase */}
       <ProductShowcase products={city.products} cityName={city.name} />

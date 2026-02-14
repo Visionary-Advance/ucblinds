@@ -13,7 +13,7 @@ export default function CityHero({ city }) {
       alt={`${city.name} window blinds`}
       speed={0.2}
       overlayClass="bg-black/40"
-      className="w-full -translate-y-2 py-[45px] lg:pt-0 min-h-[600px] lg:min-h-[700px]"
+      className="w-full pt-[45px] lg:pt-0 min-h-[600px] lg:min-h-[700px]"
     >
       <div className="flex items-center justify-center min-h-[600px] lg:min-h-[700px] px-4 lg:px-8">
         <div className="max-w-[1200px] mx-auto text-center">
