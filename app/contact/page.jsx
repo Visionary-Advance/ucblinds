@@ -143,8 +143,8 @@ to hear from you.</p>
                     <div className="col-span-2 lg:col-span-1 bg-gradient-to-br from-[#357CCE]/10 to-[#9FD7E9]/10 rounded-3xl p-6 hover:from-[#357CCE]/20 hover:to-[#9FD7E9]/20 transition-all">
                         <Mail className="w-10 h-10 text-[#357CCE] mb-4" />
                         <p className="font-montserrat text-xs text-gray-600 uppercase tracking-wider mb-2 font-bold">Email</p>
-                        <a href="mailto:info@ucblinds.co" className="font-montserrat text-sm lg:text-base text-black font-semibold hover:text-[#357CCE] break-all">
-                            info@ucblinds.co
+                        <a href="mailto:brett@ucblinds.co" className="font-montserrat text-sm lg:text-base text-black font-semibold hover:text-[#357CCE] break-all">
+                            brett@ucblinds.co
                         </a>
                     </div>
                 </div>

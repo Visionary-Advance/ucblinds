@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
                   2. Data Usage:
                 </h3>
                 <p className="font-roboto text-gray-700 leading-relaxed">
-                  We use your data solely for include instant response texts for missed calls, or follow-up messages to assist customers.
+                  We use your data solely for general conversational messaging and to provide customer assistance or address customers inquiries.
                 </p>
               </div>
 
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
                   6. Contact Information:
                 </h3>
                 <p className="font-roboto text-gray-700 leading-relaxed">
-                  Contact UC Blinds at <a href="tel:541-343-8000" className="text-[#357CCE] hover:underline font-medium">541-343-8000</a> or <a href="mailto:info@ucblinds.co" className="text-[#357CCE] hover:underline font-medium">info@ucblinds.co</a> for HELP or to STOP or CANCEL receiving messages.
+                  Contact UC Blinds at <a href="sms:541-246-3002" className="text-[#357CCE] hover:underline font-medium">541-246-3002</a> or <a href="mailto:brett@ucblinds.co" className="text-[#357CCE] hover:underline font-medium">brett@ucblinds.co</a> for HELP or to STOP or CANCEL receiving messages.
                 </p>
               </div>
 
@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
                   7. Opt-Out:
                 </h3>
                 <p className="font-roboto text-gray-700 leading-relaxed">
-                  You can opt out of the SMS list at any time by texting, emailing, or replying STOP or CANCEL to <a href="mailto:info@ucblinds.co" className="text-[#357CCE] hover:underline font-medium">info@ucblinds.co</a> or <a href="tel:541-343-8000" className="text-[#357CCE] hover:underline font-medium">541-343-8000</a>. After unsubscribing, you will receive a final SMS to confirm you have unsubscribed, and we will remove your number from our list within 24 hours. You can send HELP for additional assistance, and you will receive a text including our phone number, email address, and website. We are here to help you.
+                  You can opt out of the SMS list at any time by texting, emailing, or replying STOP or CANCEL to <a href="mailto:brett@ucblinds.co" className="text-[#357CCE] hover:underline font-medium">brett@ucblinds.co</a> or <a href="sms:541-246-3002" className="text-[#357CCE] hover:underline font-medium">541-246-3002</a>. After unsubscribing, you will receive a final SMS to confirm you have unsubscribed and we will remove your number from our list within 24 hours. You can send HELP for additional assistance, and you will receive a text including our phone number, email address, and website. We are here to help you.
                 </p>
               </div>
 

@@ -499,35 +499,33 @@ export default function BookingForm() {
                 <div className="bg-white p-6 rounded-[5px] border border-black/20">
                   <div className="space-y-4">
                     <p className="font-inter text-[14px] text-black/80 leading-relaxed">
-                      Do you Agree to receive text messages from UC Blinds sent from <span className="font-semibold">541-343-8000</span>. Message frequency varies based on communication needs and may include instant response texts for missed calls, or follow-up messages to assist customers. Message and data rates may apply. Reply STOP or CANCEL at any time to opt-out of further text message communications. For assistance, reply HELP or contact support at: <span className="font-semibold">541-343-8000</span>
+                      Do you Agree to receive text messages from UC Blinds sent from <span className="font-semibold">541-246-3002</span>. Message frequency varies based on communication needs and may include general conversational messaging and to provide customer assistance or address customers inquiries. Message and data rates may apply. Reply STOP or CANCEL at any time to opt-out of further text message communications. For assistance, reply HELP or contact support at: <span className="font-semibold">541-246-3002</span>
                     </p>
 
-                    {/* Radio Buttons for Yes/No */}
+                    {/* Checkboxes for Yes/No */}
                     <div className="space-y-3">
                       {/* Yes Option */}
                       <label className="flex items-start gap-3 cursor-pointer group">
                         <input
-                          type="radio"
-                          name="smsConsent"
-                          value="yes"
+                          type="checkbox"
                           checked={formData.smsConsent === 'yes'}
-                          onChange={(e) => handleInputChange('smsConsent', e.target.value)}
-                          className="mt-1 w-5 h-5 text-brand-blue focus:ring-brand-blue focus:ring-2 cursor-pointer"
+                          onChange={(e) => handleInputChange('smsConsent', e.target.checked ? 'yes' : null)}
+                          className="mt-1 w-5 h-5 cursor-pointer rounded"
+                          style={{ accentColor: '#357CCE' }}
                         />
                         <span className="font-inter text-[14px] text-black/80 group-hover:text-black">
-                          Yes, I agree to receive text messages from UC Blinds sent from 541-343-8000
+                          Yes, I agree to receive text messages from UC Blinds sent from 541-246-3002
                         </span>
                       </label>
 
                       {/* No Option */}
                       <label className="flex items-start gap-3 cursor-pointer group">
                         <input
-                          type="radio"
-                          name="smsConsent"
-                          value="no"
+                          type="checkbox"
                           checked={formData.smsConsent === 'no'}
-                          onChange={(e) => handleInputChange('smsConsent', e.target.value)}
-                          className="mt-1 w-5 h-5 text-brand-blue focus:ring-brand-blue focus:ring-2 cursor-pointer"
+                          onChange={(e) => handleInputChange('smsConsent', e.target.checked ? 'no' : null)}
+                          className="mt-1 w-5 h-5 cursor-pointer rounded"
+                          style={{ accentColor: '#357CCE' }}
                         />
                         <span className="font-inter text-[14px] text-black/80 group-hover:text-black">
                           No, I don&apos;t want to receive text messages from UC Blinds.
