@@ -241,6 +241,13 @@ async function createJobberRequest(accessToken, clientId, formData) {
     });
   }
 
+  if (formData.smsConsent) {
+    contactItems.push({
+      label: "SMS Consent",
+      answerText: formData.smsConsent === 'yes' ? 'Opted In' : 'Opted Out'
+    });
+  }
+
   if (contactItems.length > 0) {
     formSections.push({
       label: "Contact Preferences",
