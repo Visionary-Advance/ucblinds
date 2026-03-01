@@ -8,7 +8,8 @@
       "mcp__figma-remote-mcp__get_screenshot",
       "mcp__figma-remote-mcp__get_metadata",
       "WebSearch",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(npm run:*)"
     ],
     "deny": [],
     "ask": []

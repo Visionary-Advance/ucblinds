@@ -20,7 +20,8 @@ export default function BookingForm() {
     blindTypes: [],
     urgency: "",
     // SMS Consent
-    smsConsent: null
+    smsConsent: null,
+    message: ""
   });
 
   const handleInputChange = (field, value) => {
@@ -96,7 +97,8 @@ export default function BookingForm() {
             serviceType: [],
             blindTypes: [],
             urgency: "",
-            smsConsent: null
+            smsConsent: null,
+            message: ""
           });
         }, 4000);
       } else {
@@ -314,6 +316,20 @@ export default function BookingForm() {
                       value={formData.company}
                       onChange={(e) => handleInputChange('company', e.target.value)}
                       className="w-full h-[40px] bg-neutral-100 border border-black/40 rounded-[5px] px-3 font-inter text-black"
+                    />
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <label className="font-montserrat font-bold text-[16px] text-black/50 block mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      value={formData.message}
+                      onChange={(e) => handleInputChange('message', e.target.value)}
+                      placeholder="Tell us about your project..."
+                      rows={4}
+                      className="w-full bg-neutral-100 border border-black/40 rounded-[5px] px-3 py-2 font-inter text-black resize-none"
                     />
                   </div>
 
@@ -617,6 +633,7 @@ export default function BookingForm() {
                       <p><span className="font-semibold">Phone:</span> {formData.phone}</p>
                       {formData.company && <p><span className="font-semibold">Company:</span> {formData.company}</p>}
                       <p><span className="font-semibold">Preferred Contact:</span> {formData.contactMethod.charAt(0).toUpperCase() + formData.contactMethod.slice(1)}</p>
+                      {formData.message && <p><span className="font-semibold">Message:</span> {formData.message}</p>}
                     </div>
                   </div>
 
