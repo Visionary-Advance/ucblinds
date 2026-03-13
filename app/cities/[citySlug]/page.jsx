@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: city.metaTitle,
       description: city.metaDescription,
-      url: `https://ucblinds.com/cities/${city.slug}`,
+      url: `https://www.ucblinds.co/cities/${city.slug}`,
       siteName: 'UC Blinds',
       locale: 'en_US',
       type: 'website',
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       description: city.metaDescription,
     },
     alternates: {
-      canonical: `https://ucblinds.com/cities/${city.slug}`,
+      canonical: `https://www.ucblinds.co/cities/${city.slug}`,
     },
   };
 }
@@ -72,8 +72,8 @@ export default async function CityLandingPage({ params }) {
     "@type": "LocalBusiness",
     "name": "UC Blinds",
     "image": city.hero.backgroundImage,
-    "@id": `https://ucblinds.com/cities/${city.slug}`,
-    "url": `https://ucblinds.com/cities/${city.slug}`,
+    "@id": `https://www.ucblinds.co/cities/${city.slug}`,
+    "url": `https://www.ucblinds.co/cities/${city.slug}`,
     "telephone": city.phoneNumber,
     "priceRange": "$$",
     "address": {

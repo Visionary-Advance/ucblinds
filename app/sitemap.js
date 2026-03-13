@@ -1,7 +1,7 @@
 import { getAllCities } from '@/lib/cities';
 
 export default function sitemap() {
-  const baseUrl = 'https://ucblinds.com';
+  const baseUrl = 'https://www.ucblinds.co';
 
   const staticRoutes = [
     {
