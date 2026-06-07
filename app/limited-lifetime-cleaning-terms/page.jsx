@@ -1,7 +1,10 @@
-export const metadata = {
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
   title: "Limited Lifetime Cleaning Terms & Conditions | UC Blinds",
   description: "Terms and conditions for UC Blinds' Limited Lifetime Cleaning Discount program for window coverings purchased from UC Blinds.",
-};
+  path: "/limited-lifetime-cleaning-terms",
+});
 
 export default function Limited() {
   return (

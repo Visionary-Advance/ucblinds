@@ -1,11 +1,13 @@
 import { getAllCities } from '@/lib/cities';
+import { buildMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Areas We Serve | UC Blinds - Oregon Blind Services',
   description: 'UC Blinds serves Eugene, Bend, Springfield, Woodburn, and surrounding Oregon communities with professional blind sales, installation, and cleaning.',
-};
+  path: '/cities',
+});
 
 export default function CitiesOverview() {
   const cities = getAllCities();

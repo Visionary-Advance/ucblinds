@@ -1,4 +1,5 @@
 import { getCityBySlug, getAllCitySlugs } from '@/lib/cities';
+import { buildMetadata } from '@/lib/seo';
 import CityHero from '@/Components/CityHero';
 import BeforeAfterSlider from '@/Components/BeforeAfterSlider';
 import ProductShowcase from '@/Components/ProductShowcase';
@@ -27,26 +28,11 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  return buildMetadata({
     title: city.metaTitle,
     description: city.metaDescription,
-    openGraph: {
-      title: city.metaTitle,
-      description: city.metaDescription,
-      url: `https://www.ucblinds.co/cities/${city.slug}`,
-      siteName: 'UC Blinds',
-      locale: 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: city.metaTitle,
-      description: city.metaDescription,
-    },
-    alternates: {
-      canonical: `https://www.ucblinds.co/cities/${city.slug}`,
-    },
-  };
+    path: `/cities/${city.slug}`,
+  });
 }
 
 export default async function CityLandingPage({ params }) {

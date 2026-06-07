@@ -28,9 +28,9 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
               {/* Left Content */}
               <div className="space-y-6 lg:space-y-8 lg:w-11/12">
-                <h2 className="font-montserrat tracking-[-1px] font-bold text-white text-[40px] lg:text-[3.75em] leading-tight">
-                Custom Window Coverings &amp; Professional Ultrasonic Blind Cleaning  
-                </h2>
+                <h1 className="font-montserrat tracking-[-1px] font-bold text-white text-[40px] lg:text-[3.75em] leading-tight">
+                Custom Window Coverings &amp; Professional Ultrasonic Blind Cleaning
+                </h1>
                 <p className="font-roboto text-white text-[20px] lg:text-[24px] leading-normal max-w-full lg:max-w-[731px]">
                  We provide new window coverings, installation, and blind cleaning for Residential properties, Rentals, Property Management, and Businesses. Convenient pickup service with flexible turnaround options.
                 </p>
