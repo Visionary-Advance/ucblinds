@@ -100,7 +100,9 @@ export default function Footer() {
 
           {/* Areas We Serve */}
           <div>
-            <h3 className="text-xl font-bold text-black mb-4">Areas We Serve</h3>
+            <h3 className="text-xl font-bold text-black mb-4">
+              <Link href="/cities" className="hover:text-[#357cce] transition-colors">Areas We Serve</Link>
+            </h3>
             <ul className="space-y-3">
               {cities.map((city) => (
                 <li key={city.id}>
@@ -161,7 +163,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-black mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/about-us" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   About Us
                 </Link>
               </li>
@@ -183,7 +185,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-black mb-4">Useful Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/privacy" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
+                <Link href="/privacy-policy" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
                   Privacy Policy
                 </Link>
               </li>
@@ -193,8 +195,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
-                  Terms of Use
+                <Link href="/limited-lifetime-cleaning-terms" className="text-lg text-black/90 hover:text-[#357cce] transition-colors">
+                  Limited Lifetime Cleaning Terms
                 </Link>
               </li>
             </ul>
@@ -202,7 +204,9 @@ export default function Footer() {
 
           {/* Areas We Serve */}
           <div>
-            <h3 className="text-2xl font-bold text-black mb-4">Areas We Serve</h3>
+            <h3 className="text-2xl font-bold text-black mb-4">
+              <Link href="/cities" className="hover:text-[#357cce] transition-colors">Areas We Serve</Link>
+            </h3>
             <ul className="space-y-3">
               {cities.map((city) => (
                 <li key={city.id}>

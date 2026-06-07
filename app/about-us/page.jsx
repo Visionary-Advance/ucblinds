@@ -1,4 +1,11 @@
 import Image from 'next/image';
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata({
+  title: 'About UC Blinds | Locally Owned Oregon Blind Experts',
+  description: 'UC Blinds is a locally owned, family-operated Oregon company offering ultrasonic blind cleaning, repair, installation, and new window covering sales.',
+  path: '/about-us',
+});
 
 export default function AboutPage() {
   return (

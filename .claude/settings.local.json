@@ -9,7 +9,10 @@
       "mcp__figma-remote-mcp__get_metadata",
       "WebSearch",
       "Bash(npm run dev:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(git checkout *)",
+      "Bash(rm -rf \"ucblinds_07-jun-2026_all-issues_2026-06-07_12-03-23\")",
+      "Bash(node -e \"['Window Blinds Eugene OR | Sales & Installation | UC Blinds','Window Blinds Bend OR | Sales & Installation | UC Blinds','Window Blinds Springfield OR | Sales & Install | UC Blinds','Window Blinds Woodburn OR | Sales & Install | UC Blinds'].forEach\\(t=>console.log\\(t.length, t\\)\\)\")"
     ],
     "deny": [],
     "ask": []

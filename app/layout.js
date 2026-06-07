@@ -33,20 +33,27 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Ultrasonic Blind Cleaning, Repair, Install, and Sales | UCBlinds",
+  metadataBase: new URL("https://www.ucblinds.co"),
+  title: "Ultrasonic Blind Cleaning, Repair, Install & Sales | UC Blinds",
   description:
-    "UCBlinds offers professional ultrasonic blind cleaning, repair, installation, and sales across Oregon. Restore your blinds to like-new condition with our eco-friendly cleaning process.",
+    "Professional ultrasonic blind cleaning, repair, installation & sales across Oregon. Restore your blinds to like-new condition — eco-friendly & affordable.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Ultrasonic Blind Cleaning, Repair, Install, and Sales | UCBlinds",
+    title: "Ultrasonic Blind Cleaning, Repair, Install & Sales | UC Blinds",
     description:
-      "Professional ultrasonic blind cleaning, repair, installation, and sales across Oregon. Restore your blinds to like-new condition with our eco-friendly cleaning process.",
+      "Professional ultrasonic blind cleaning, repair, installation & sales across Oregon. Restore your blinds to like-new condition — eco-friendly & affordable.",
+    url: "https://www.ucblinds.co",
+    siteName: "UC Blinds",
+    locale: "en_US",
+    type: "website",
     images: [
       {
         url: "/Img/UC_Logo.png",
-        alt: "UCBlinds Logo",
+        alt: "UC Blinds logo",
       },
     ],
-    type: "website",
   },
 };
 

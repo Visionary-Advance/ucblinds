@@ -1,7 +1,10 @@
-export const metadata = {
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
   title: "Limited Warranty | UC Blinds",
-  description: "Limited Warranty for UC Blinds products - Learn about our warranty coverage for workmanship and materials.",
-};
+  description: "Limited Warranty for UC Blinds products - learn about our warranty coverage for workmanship and materials.",
+  path: "/warranty",
+});
 
 export default function Warranty() {
   return (

@@ -60,7 +60,7 @@ export default function Header() {
                 />
               </div>
               <div className="flex flex-col">
-                <h1 className={`font-montserrat font-bold ${logoTextColor} text-[24px] md:text-[32px]`}>UC Blinds</h1>
+                <span className={`font-montserrat font-bold ${logoTextColor} text-[24px] md:text-[32px]`}>UC Blinds</span>
                 <div className={`flex items-center gap-1.5 md:gap-2 ${logoTextColor} text-[10px] md:text-[12px] font-inter tracking-wide`}>
                   <span>Clean</span>
                   <Circle className="w-1 h-1 fill-current" />

@@ -1,7 +1,10 @@
-export const metadata = {
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
   title: "Privacy Policy | UC Blinds",
-  description: "Privacy Policy for UC Blinds - Learn how we collect, use, and protect your personal information.",
-};
+  description: "Privacy Policy for UC Blinds. Learn how we collect, use, store, and protect your personal information when you use our website and services.",
+  path: "/privacy-policy",
+});
 
 export default function PrivacyPolicy() {
   return (
